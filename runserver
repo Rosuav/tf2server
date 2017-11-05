@@ -1,0 +1,2 @@
+cd ~/tf2server/steamcmd_linux/tf2
+LD_LIBRARY_PATH=bin ./srcds_linux -console -game tf +sv_pure 1 +map cp_dustbowl -nobreakpad

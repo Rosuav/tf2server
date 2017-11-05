@@ -1,0 +1,17 @@
+linux32
+linux64
+package
+public
+steamcmd.sh
+steam.sh
+tf2/bin
+tf2/hl2
+tf2/platform
+tf2/srcds_*
+tf2/steamapps
+tf2/*.txt
+*.vpk
+*.so
+tf2/tf/maps
+tf2/tf/resource
+*.cache
