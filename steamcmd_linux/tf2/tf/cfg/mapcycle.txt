@@ -1,3 +1,4 @@
 cp_dustbowl
+ctf_foundry
 koth_viaduct
 pl_upward
