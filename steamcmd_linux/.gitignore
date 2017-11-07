@@ -17,3 +17,5 @@ tf2/tf/resource
 *.cache
 tf2/tf/downloadlists/
 tf2/tf/stats.txt
+tf2/tf/cfg/sourcemod/
+tf2/tf/addons
