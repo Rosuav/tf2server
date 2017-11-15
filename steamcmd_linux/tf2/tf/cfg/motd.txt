@@ -1,1 +1,14 @@
-This is a motd. Have fun.
+Welcome to Sikorsky! Admin: Rosuav.
+
+Maps:
+cp_dustbowl
+ctf_foundry
+koth_viaduct
+pl_upward
+
+Mods:
+BuffBot and BotControl from https://github.com/Rosuav/TF2BuffBot
+
+Chat commands:
+!roulette, !gift - use after accumulating kills and deaths
+!oi - tell friendly bots to do something
