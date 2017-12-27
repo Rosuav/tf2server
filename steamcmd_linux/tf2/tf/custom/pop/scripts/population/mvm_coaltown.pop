@@ -48,106 +48,6 @@ population
 		}
 		WaveSpawn
 		{
-			Name	"Harbinger 2"
-			WaitForAllDead	"Harbinger 1"
-			TotalCurrency	100
-			TotalCount	1
-			MaxActive	5
-			SpawnCount	2
-			Where	spawnbot
-			WaitBeforeStarting	30
-			WaitBetweenSpawns	10
-			Squad
-			{
-				TFBot
-				{
-					Health	500
-					Name	Soldier
-					Class	Soldier
-					Skill	Normal
-					Item	"tf_weapon_rocketlauncher"
-					Item	"tf_weapon_shotgun_soldier"
-					Item	"tf_weapon_shovel"
-				}
-			}
-		}
-		WaveSpawn
-		{
-			Name	"Harbinger 3"
-			WaitForAllDead	"Harbinger 2"
-			TotalCurrency	100
-			TotalCount	1
-			MaxActive	5
-			SpawnCount	2
-			Where	spawnbot
-			WaitBeforeStarting	30
-			WaitBetweenSpawns	10
-			Squad
-			{
-				TFBot
-				{
-					Health	500
-					Name	Soldier
-					Class	Soldier
-					Skill	Normal
-					Item	"tf_weapon_rocketlauncher"
-					Item	"tf_weapon_shotgun_soldier"
-					Item	"tf_weapon_shovel"
-				}
-			}
-		}
-		WaveSpawn
-		{
-			Name	"Harbinger 4"
-			WaitForAllDead	"Harbinger 3"
-			TotalCurrency	100
-			TotalCount	1
-			MaxActive	5
-			SpawnCount	2
-			Where	spawnbot
-			WaitBeforeStarting	30
-			WaitBetweenSpawns	10
-			Squad
-			{
-				TFBot
-				{
-					Health	500
-					Name	Soldier
-					Class	Soldier
-					Skill	Normal
-					Item	"tf_weapon_rocketlauncher"
-					Item	"tf_weapon_shotgun_soldier"
-					Item	"tf_weapon_shovel"
-				}
-			}
-		}
-		WaveSpawn
-		{
-			Name	"Harbinger 5"
-			WaitForAllDead	"Harbinger 4"
-			TotalCurrency	100
-			TotalCount	1
-			MaxActive	5
-			SpawnCount	2
-			Where	spawnbot
-			WaitBeforeStarting	30
-			WaitBetweenSpawns	10
-			Squad
-			{
-				TFBot
-				{
-					Health	500
-					Name	Soldier
-					Class	Soldier
-					Skill	Normal
-					Item	"tf_weapon_rocketlauncher"
-					Item	"tf_weapon_shotgun_soldier"
-					Item	"tf_weapon_shovel"
-				}
-			}
-		}
-		WaveSpawn
-		{
 			Name	"Tank 1"
 			WaitForAllDead	"Harbinger 1"
 			TotalCurrency	400
@@ -175,6 +75,31 @@ population
 						Target	boss_deploy_relay
 						Action	Trigger
 					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	"Harbinger 2"
+			WaitForAllDead	"Harbinger 1"
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	5
+			SpawnCount	2
+			Where	spawnbot
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	10
+			Squad
+			{
+				TFBot
+				{
+					Health	500
+					Name	Soldier
+					Class	Soldier
+					Skill	Normal
+					Item	"tf_weapon_rocketlauncher"
+					Item	"tf_weapon_shotgun_soldier"
+					Item	"tf_weapon_shovel"
 				}
 			}
 		}
@@ -212,6 +137,31 @@ population
 		}
 		WaveSpawn
 		{
+			Name	"Harbinger 3"
+			WaitForAllDead	"Harbinger 2"
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	5
+			SpawnCount	2
+			Where	spawnbot
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	10
+			Squad
+			{
+				TFBot
+				{
+					Health	500
+					Name	Soldier
+					Class	Soldier
+					Skill	Normal
+					Item	"tf_weapon_rocketlauncher"
+					Item	"tf_weapon_shotgun_soldier"
+					Item	"tf_weapon_shovel"
+				}
+			}
+		}
+		WaveSpawn
+		{
 			Name	"Tank 3"
 			WaitForAllDead	"Harbinger 3"
 			TotalCurrency	400
@@ -244,6 +194,31 @@ population
 		}
 		WaveSpawn
 		{
+			Name	"Harbinger 4"
+			WaitForAllDead	"Harbinger 3"
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	5
+			SpawnCount	2
+			Where	spawnbot
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	10
+			Squad
+			{
+				TFBot
+				{
+					Health	500
+					Name	Soldier
+					Class	Soldier
+					Skill	Normal
+					Item	"tf_weapon_rocketlauncher"
+					Item	"tf_weapon_shotgun_soldier"
+					Item	"tf_weapon_shovel"
+				}
+			}
+		}
+		WaveSpawn
+		{
 			Name	"Tank 4"
 			WaitForAllDead	"Harbinger 4"
 			TotalCurrency	400
@@ -271,6 +246,31 @@ population
 						Target	boss_deploy_relay
 						Action	Trigger
 					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	"Harbinger 5"
+			WaitForAllDead	"Harbinger 4"
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	5
+			SpawnCount	2
+			Where	spawnbot
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	10
+			Squad
+			{
+				TFBot
+				{
+					Health	500
+					Name	Soldier
+					Class	Soldier
+					Skill	Normal
+					Item	"tf_weapon_rocketlauncher"
+					Item	"tf_weapon_shotgun_soldier"
+					Item	"tf_weapon_shovel"
 				}
 			}
 		}
