@@ -55,7 +55,7 @@ population
 			MaxActive	5
 			SpawnCount	2
 			Where	spawnbot
-			WaitBeforeStarting	0
+			WaitBeforeStarting	30
 			WaitBetweenSpawns	10
 			Squad
 			{
@@ -80,7 +80,7 @@ population
 			MaxActive	5
 			SpawnCount	2
 			Where	spawnbot
-			WaitBeforeStarting	0
+			WaitBeforeStarting	30
 			WaitBetweenSpawns	10
 			Squad
 			{
@@ -105,7 +105,7 @@ population
 			MaxActive	5
 			SpawnCount	2
 			Where	spawnbot
-			WaitBeforeStarting	0
+			WaitBeforeStarting	30
 			WaitBetweenSpawns	10
 			Squad
 			{
@@ -130,7 +130,7 @@ population
 			MaxActive	5
 			SpawnCount	2
 			Where	spawnbot
-			WaitBeforeStarting	0
+			WaitBeforeStarting	30
 			WaitBetweenSpawns	10
 			Squad
 			{
