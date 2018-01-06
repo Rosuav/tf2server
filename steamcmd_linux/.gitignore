@@ -22,3 +22,4 @@ tf2/tf/addons
 *.sig
 tf2/tf/scripts/items/items_game.txt
 tf2/tf/custom/pop/scripts/population/mvm_coaltown.pop
+tf2/tf/replay
