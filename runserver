@@ -1,5 +1,7 @@
 cd ~/tf2server/steamcmd_linux/tf2
-# TODO: allow -replay to be added somehow
-# And if it's used, also start an HTTP server in the replays directory
-# (using 'python3 -m http.server' or similar).
-LD_LIBRARY_PATH=bin ./srcds_linux -console -game tf +sv_pure 1 +maxplayers 40 +map ${1:-cp_dustbowl} -nobreakpad
+# To enable replays, have the server running:
+# cd ~/tf2server/replays; python3 -m http.server
+# Then (re)start the game server. Replay support should be detected.
+USE_REPLAY=
+curl http://localhost:8000/ >/dev/null 2>&1 && USE_REPLAY=-replay
+LD_LIBRARY_PATH=bin ./srcds_linux -console -game tf +sv_pure 1 +maxplayers 40 $USE_REPLAY +map ${1:-cp_dustbowl} -nobreakpad
