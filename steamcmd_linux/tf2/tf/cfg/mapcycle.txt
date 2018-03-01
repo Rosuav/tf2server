@@ -1,4 +1,3 @@
-cp_dustbowl
-ctf_foundry
-koth_viaduct
-pl_upward
+mvm_coaltown
+mvm_decoy
+mvm_mannworks
