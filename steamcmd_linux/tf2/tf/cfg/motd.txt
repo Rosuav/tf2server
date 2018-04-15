@@ -1,10 +1,6 @@
 Welcome to Sikorsky! Admin: Rosuav.
 
-Maps:
-cp_dustbowl
-ctf_foundry
-koth_viaduct
-pl_upward
+Please keep things PG-13ish and be polite to each other. And have fun!
 
 Mods:
 BuffBot and BotControl from https://github.com/Rosuav/TF2BuffBot
@@ -12,3 +8,7 @@ BuffBot and BotControl from https://github.com/Rosuav/TF2BuffBot
 Chat commands:
 !roulette, !gift - use after accumulating kills and deaths
 !oi - tell friendly bots to do something
+
+There are some randomly fun things that will happen on this server. Check
+the GitHub page above for more information, or just play around and enjoy
+discovering them!
