@@ -7,7 +7,7 @@ steam.sh
 tf2/bin
 tf2/hl2
 tf2/platform
-tf2/srcds_*
+srcds*
 tf2/steamapps
 tf2/*.txt
 *.vpk
@@ -23,3 +23,9 @@ tf2/tf/addons
 tf2/tf/scripts/items/items_game.txt
 tf2/tf/custom/pop/scripts/population/*.pop
 tf2/tf/replay
+csgo/bin
+csgo/steamapps
+csgo/*.txt
+csgo/platform
+csgo/csgo/maps
+csgo/csgo/resource
