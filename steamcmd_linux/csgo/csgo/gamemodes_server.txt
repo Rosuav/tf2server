@@ -90,6 +90,7 @@
 						"aug"			{ "kills"	"5" }
 						//Special
 						"awp"			{ "kills"	"5" }
+						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"m249"			{ "kills"	"2" }
 						//Pistols
 						"elite"			{ "kills"	"2" }
@@ -119,6 +120,7 @@
 						"aug"			{ "kills"	"5" }
 						//Special
 						"awp"			{ "kills"	"5" }
+						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"m249"			{ "kills"	"2" }
 						//Pistols
 						"elite"			{ "kills"	"2" }
