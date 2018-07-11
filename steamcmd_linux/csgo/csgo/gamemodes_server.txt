@@ -168,7 +168,6 @@
 				"cs_agency"		""
  				"cs_office"		""
 				"cs_italy"		""
-				"cs_assault"		""
 			}
 		}
 	}
