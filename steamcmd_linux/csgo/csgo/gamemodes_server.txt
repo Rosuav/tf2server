@@ -20,12 +20,10 @@
 											// Another way to set maxplayers is to add -maxplayers_override XX to the cmd line.
 					"exec"
 					{
-											// Any config files listed here will be executed after the ones in gamemodes.txt.
-			
 						"exec"		"server_last.cfg" 
 					}
 
-					"mapgroupsMP"					// List of mapgroups valid for this game mode ( competitive )
+					"mapgroupsMP"
 					{
 						"mg_bomb_se"	""
 					}
@@ -43,7 +41,7 @@
 						"exec"		"server_last.cfg"
 					}
 
-					"mapgroupsMP"					// List of mapgroups valid for this game mode ( casual )
+					"mapgroupsMP"
 					{
 						"mg_bomb_se"	""
 						"mg_rosuav"	""
@@ -64,7 +62,6 @@
 				"gungameprogressive"
 				{
 					"maxplayers"		"10"
-					// These are the configs that get executed when a game mode of this type is created
 					"exec"
 					{
 						"exec"		"server_last.cfg"
@@ -95,7 +92,6 @@
 				"gungametrbomb"
 				{
 					"maxplayers"	"10"
-					// These are the configs that get executed when a game mode of this type is created
 					"exec"
 					{
 						"exec"	"server_last.cfg"
@@ -145,7 +141,7 @@
 
 	"mapgroups"
 	{
-		"mg_bomb_se"							// mapgroup definition
+		"mg_bomb_se"
 		{
 			"name"		"mg_bomb_se"
 			"maps"
@@ -157,7 +153,7 @@
 			}
 		}
 
-		"mg_rosuav"							// mapgroup definition
+		"mg_rosuav"
 		{
 			"name"		"mg_rosuav"
 			"maps"
