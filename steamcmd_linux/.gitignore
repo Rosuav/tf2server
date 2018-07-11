@@ -29,3 +29,4 @@ csgo/*.txt
 csgo/platform
 csgo/csgo/maps
 csgo/csgo/resource
+*.dll
