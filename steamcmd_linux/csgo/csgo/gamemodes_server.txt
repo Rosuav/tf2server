@@ -90,9 +90,9 @@
 						"aug"			{ "kills"	"5" }
 						//Special
 						"awp"			{ "kills"	"5" }
-						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"m249"			{ "kills"	"2" }
 						//Pistols
+						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"elite"			{ "kills"	"2" }
 						"deagle"		{ "kills"	"3" }
 						"fiveseven"		{ "kills"	"2" }
@@ -120,9 +120,9 @@
 						"aug"			{ "kills"	"5" }
 						//Special
 						"awp"			{ "kills"	"5" }
-						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"m249"			{ "kills"	"2" }
 						//Pistols
+						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"elite"			{ "kills"	"2" }
 						"deagle"		{ "kills"	"3" }
 						"fiveseven"		{ "kills"	"2" }
