@@ -30,3 +30,4 @@ csgo/platform
 csgo/csgo/maps
 csgo/csgo/resource
 *.dll
+csgo/csgo/sound/music
