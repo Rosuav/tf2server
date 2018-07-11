@@ -87,37 +87,37 @@
 						"awp"		{ "kills"	"5" }
 						"knifegg"	{ "kills"	"1" }
 					}
+				}
 
-					/////////////////////////////////////////
-					// DEMOLITION
-					/////////////////////////////////////////
-					"gungametrbomb"
+				/////////////////////////////////////////
+				// DEMOLITION
+				/////////////////////////////////////////
+				"gungametrbomb"
+				{
+					"maxplayers"	"10"
+					// These are the configs that get executed when a game mode of this type is created
+					"exec"
 					{
-						"maxplayers"	"10"
-						// These are the configs that get executed when a game mode of this type is created
-						"exec"
-						{
-							"exec"	"server_last.cfg"
-						}
+						"exec"	"server_last.cfg"
+					}
 
-						"mapgroupsMP"
-						{
-							"mg_demolition"		""
-						}
+					"mapgroupsMP"
+					{
+						"mg_demolition"		""
+					}
 
-						"weaponprogression_ct"
-						{
-							"m4a1"			{ "kills"	"1" }
-							"awp"			{ "kills"	"1" }
-							"Scar20"		{ "kills"	"1" }
-						}
-			
-						"weaponprogression_t"
-						{
-							"ak47"			{ "kills"	"1" }
-							"awp"			{ "kills"	"1" }
-							"g3sg1"			{ "kills"	"1" }
-						}
+					"weaponprogression_ct"
+					{
+						"m4a1"			{ "kills"	"1" }
+						"awp"			{ "kills"	"1" }
+						"Scar20"		{ "kills"	"1" }
+					}
+		
+					"weaponprogression_t"
+					{
+						"ak47"			{ "kills"	"1" }
+						"awp"			{ "kills"	"1" }
+						"g3sg1"			{ "kills"	"1" }
 					}
 				}
 			}
