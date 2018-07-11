@@ -65,6 +65,7 @@
 					"exec"
 					{
 						"exec"		"server_last.cfg"
+						"exec"		"armsarmor.cfg"
 					}
 					"mapgroupsMP"
 					{
@@ -73,16 +74,60 @@
 
 					"weaponprogression_ct"
 					{
-						"deagle"	{ "kills"	"5" }
-						"awp"		{ "kills"	"5" }
-						"knifegg"	{ "kills"	"1" }
+						//SMGs
+						"bizon"			{ "kills"	"2" }
+						"ump45"			{ "kills"	"3" }
+						"p90"			{ "kills"	"5" }
+						//Shotties
+						"sawedoff"		{ "kills"	"4" }
+						"nova"			{ "kills"	"2" }
+						"xm1014"		{ "kills"	"2" }
+						//BOUNDARY
+						"knife"			{ "kills"	"1" }
+						//Rifles
+						"galilar"		{ "kills"	"5" }
+						"ak47"			{ "kills"	"5" }
+						"aug"			{ "kills"	"5" }
+						//Special
+						"awp"			{ "kills"	"5" }
+						"m249"			{ "kills"	"2" }
+						//Pistols
+						"elite"			{ "kills"	"2" }
+						"deagle"		{ "kills"	"3" }
+						"fiveseven"		{ "kills"	"2" }
+						"cz75a"			{ "kills"	"5" }
+						"p250"			{ "kills"	"4" }
+						//Gold knife
+						"knifegg"		{ "kills"	"1" }
 					}
-
+					
 					"weaponprogression_t"
 					{
-						"deagle"	{ "kills"	"5" }
-						"awp"		{ "kills"	"5" }
-						"knifegg"	{ "kills"	"1" }
+						//SMGs
+						"bizon"			{ "kills"	"2" }
+						"ump45"			{ "kills"	"3" }
+						"p90"			{ "kills"	"5" }
+						//Shotties
+						"sawedoff"		{ "kills"	"4" }
+						"nova"			{ "kills"	"2" }
+						"xm1014"		{ "kills"	"2" }
+						//BOUNDARY
+						"knife"			{ "kills"	"1" }
+						//Rifles
+						"galilar"		{ "kills"	"5" }
+						"ak47"			{ "kills"	"5" }
+						"aug"			{ "kills"	"5" }
+						//Special
+						"awp"			{ "kills"	"5" }
+						"m249"			{ "kills"	"2" }
+						//Pistols
+						"elite"			{ "kills"	"2" }
+						"deagle"		{ "kills"	"3" }
+						"fiveseven"		{ "kills"	"2" }
+						"cz75a"			{ "kills"	"5" }
+						"p250"			{ "kills"	"4" }
+						//Gold knife
+						"knifegg"		{ "kills"	"1" }
 					}
 				}
 
