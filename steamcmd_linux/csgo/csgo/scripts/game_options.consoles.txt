@@ -53,7 +53,7 @@
 	"Music Volume"
 	{
 		"name"			"#SFUI_Settings_Music_Volume"
-		"convar"		"snd_musicvolume"
+		"convar"		"snd_musicvolume_fixed"
 		"priority"		"0450"
 		"type"			"slider"
 		"minvalue"		"0.0"
