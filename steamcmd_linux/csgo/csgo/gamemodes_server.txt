@@ -149,18 +149,17 @@
 						"mg_demolition"		""
 					}
 
-					//TODO: Discuss with Stephen what would be an appropriate ordering
 					"weaponprogression_ct"
 					{
 						"bizon"			{ "kills"	"1" }
 						"p90"			{ "kills"	"1" }
-						"nova"			{ "kills"	"1" }
+						"mag7"			{ "kills"	"1" }
 						"m4a1"			{ "kills"	"1" }
 						"aug"			{ "kills"	"1" }
 						"awp"			{ "kills"	"1" }
+						"negev"			{ "kills"	"1" }
 						"scar20"		{ "kills"	"1" }
 						"deagle"		{ "kills"	"1" }
-						"m249"			{ "kills"	"1" }
 						"ssg08"			{ "kills"	"1" }
 					}
 		
@@ -168,13 +167,13 @@
 					{
 						"bizon"			{ "kills"	"1" }
 						"p90"			{ "kills"	"1" }
-						"nova"			{ "kills"	"1" }
+						"sawedoff"		{ "kills"	"1" }
 						"ak47"			{ "kills"	"1" }
 						"sg556"			{ "kills"	"1" }
 						"awp"			{ "kills"	"1" }
+						"m249"			{ "kills"	"1" }
 						"g3sg1"			{ "kills"	"1" }
 						"deagle"		{ "kills"	"1" }
-						"negev"			{ "kills"	"1" }
 						"ssg08"			{ "kills"	"1" }
 					}
 				}
