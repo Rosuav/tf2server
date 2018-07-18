@@ -72,6 +72,8 @@
 						"mg_armsrace"	""
 					}
 
+					//Sadly, a "taser" (Zeus) level doesn't seem to work. Awww. I wanted the bots
+					//to run around zapping each other before earning the right to use bullets.
 					"weaponprogression_ct"
 					{
 						//SMGs
