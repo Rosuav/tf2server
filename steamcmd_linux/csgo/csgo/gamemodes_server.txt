@@ -26,6 +26,7 @@
 					"mapgroupsMP"
 					{
 						"mg_bomb_se"	""
+						"mg_rosuav"	""
 					}
 				}
 
