@@ -6,7 +6,5 @@ de_dust2
 de_overpass
 de_cache
 cs_agency
-cs_insertion
 cs_office
 cs_italy
-cs_assault
