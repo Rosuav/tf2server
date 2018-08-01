@@ -16,7 +16,7 @@
 				/////////////////////////////////////////
 				"competitive"
 				{
-					"maxplayers"		"11"			// Note that maxplayers doesn't go in the convar block.
+					"maxplayers"		"30"			// Note that maxplayers doesn't go in the convar block.
 											// Another way to set maxplayers is to add -maxplayers_override XX to the cmd line.
 					"exec"
 					{
