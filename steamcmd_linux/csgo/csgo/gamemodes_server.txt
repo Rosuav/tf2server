@@ -65,8 +65,8 @@
 					"maxplayers"		"10"
 					"exec"
 					{
-						"exec"		"server_last.cfg"
 						"exec"		"armsarmor.cfg"
+						"exec"		"server_last.cfg"
 					}
 					"mapgroupsMP"
 					{
