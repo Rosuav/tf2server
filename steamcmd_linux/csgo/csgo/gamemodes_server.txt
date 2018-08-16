@@ -70,16 +70,20 @@
 					}
 					"mapgroupsMP"
 					{
-						"mg_armsrace"	""
+						"mg_armsrace"	"0"
 					}
 
 					//Sadly, a "taser" (Zeus) level doesn't seem to work. Awww. I wanted the bots
 					//to run around zapping each other before earning the right to use bullets.
+					//TODO: Now that MP7 and MP5 are in the list, it's pretty long. Should some
+					//weapons be removed? Or should it just be a long match?
 					"weaponprogression_ct"
 					{
 						//SMGs
 						"bizon"			{ "kills"	"2" }
 						"ump45"			{ "kills"	"3" }
+						"mp7"			{ "kills"	"3" }
+						"mp5sd"			{ "kills"	"3" }
 						"p90"			{ "kills"	"5" }
 						//Shotties
 						"sawedoff"		{ "kills"	"4" }
@@ -110,6 +114,8 @@
 						//SMGs
 						"bizon"			{ "kills"	"2" }
 						"ump45"			{ "kills"	"3" }
+						"mp7"			{ "kills"	"3" }
+						"mp5sd"			{ "kills"	"3" }
 						"p90"			{ "kills"	"5" }
 						//Shotties
 						"sawedoff"		{ "kills"	"4" }
