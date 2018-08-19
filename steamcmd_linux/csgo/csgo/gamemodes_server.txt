@@ -158,8 +158,8 @@
 
 					"weaponprogression_ct"
 					{
-						"mag7"			{ "kills"	"1" }
 						"mp5sd"			{ "kills"	"1" }
+						"mag7"			{ "kills"	"1" }
 						"p90"			{ "kills"	"1" }
 						"m4a1"			{ "kills"	"1" }
 						"aug"			{ "kills"	"1" }
@@ -172,8 +172,8 @@
 		
 					"weaponprogression_t"
 					{
-						"sawedoff"		{ "kills"	"1" }
 						"mp5sd"			{ "kills"	"1" }
+						"sawedoff"		{ "kills"	"1" }
 						"p90"			{ "kills"	"1" }
 						"ak47"			{ "kills"	"1" }
 						"sg556"			{ "kills"	"1" }
