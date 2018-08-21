@@ -178,7 +178,7 @@
 						"ak47"			{ "kills"	"1" }
 						"sg556"			{ "kills"	"1" }
 						"awp"			{ "kills"	"1" }
-						"m249"			{ "kills"	"1" }
+						"negev"			{ "kills"	"1" }
 						"g3sg1"			{ "kills"	"1" }
 						"deagle"		{ "kills"	"1" }
 						"ssg08"			{ "kills"	"1" }
