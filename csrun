@@ -1,4 +1,5 @@
 cd ~/tf2server/steamcmd_linux/csgo
-LD_LIBRARY_PATH=bin ./srcds_linux -console -game csgo -usercon +game_type 0 +game_mode 1 +mapgroup mg_rosuav +map de_dust2
-: LD_LIBRARY_PATH=bin ./srcds_linux -console -game csgo -usercon +game_type 1 +game_mode 0 +mapgroup mg_armsrace +map ar_shoots
-: LD_LIBRARY_PATH=bin ./srcds_linux -console -game csgo -usercon +game_type 1 +game_mode 1 +mapgroup mg_demolition +map de_safehouse
+ARGS="-console -game csgo -usercon"
+LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 0 +game_mode 1 +mapgroup mg_rosuav +map de_dust2
+: LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 1 +game_mode 0 +mapgroup mg_armsrace +map ar_shoots
+: LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 1 +game_mode 1 +mapgroup mg_demolition +map de_safehouse
