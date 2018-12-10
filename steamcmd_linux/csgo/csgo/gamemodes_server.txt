@@ -25,7 +25,6 @@
 
 					"mapgroupsMP"
 					{
-						"mg_bomb_se"	""
 						"mg_rosuav"	""
 					}
 				}
@@ -44,7 +43,6 @@
 
 					"mapgroupsMP"
 					{
-						"mg_bomb_se"	""
 						"mg_rosuav"	""
 					}
 
