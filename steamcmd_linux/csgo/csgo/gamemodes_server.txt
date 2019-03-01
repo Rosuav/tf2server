@@ -182,6 +182,14 @@
 						"ssg08"			{ "kills"	"1" }
 					}
 				}
+
+				"deathmatch"
+				{
+					"exec"
+					{
+						"exec"		"server_last.cfg" 
+					}
+				}
 			}
 		}
 
