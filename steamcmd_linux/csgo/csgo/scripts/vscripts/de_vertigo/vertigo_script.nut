@@ -5,6 +5,7 @@ function GameModeCheck ()
        // checks the game mode and type and the current match
        local nMode = ScriptGetGameMode();
        local nType = ScriptGetGameType();
+	   local nRounds = ScriptGetRoundsPlayed();
 
        // type 0, mode 0 = casual
        // type 0, mode 1 = competitive
@@ -16,10 +17,10 @@ function GameModeCheck ()
 	   
 	if (nMode == 2 && nType == 0)								// If we're running Wingman, enable blockers. Note: Each bombsite has its own relay: "wingman.asite.relay" / "wingman.bsite.relay"
 	{
-	  EntFire("wingman.bsite.relay", "trigger", 0, 0);
+	  EntFire("wingman.asite.relay", "trigger", 0, 0);
+	  EntFire("helicopter.template", "ForceSpawn", 0, 0);
 	  
 	}
 
  }
 
- 
