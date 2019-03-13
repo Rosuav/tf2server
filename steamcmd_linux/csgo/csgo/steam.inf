@@ -1,8 +1,8 @@
-ClientVersion=882
-ServerVersion=882
-PatchVersion=1.36.8.1
+ClientVersion=886
+ServerVersion=886
+PatchVersion=1.36.8.2
 ProductName=csgo
 appID=730
-SourceRevision=4982890
-VersionDate=Mar 07 2019
-VersionTime=16:35:04
+SourceRevision=4991836
+VersionDate=Mar 13 2019
+VersionTime=16:08:23
