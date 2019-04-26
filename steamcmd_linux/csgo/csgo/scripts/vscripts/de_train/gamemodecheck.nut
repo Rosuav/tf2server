@@ -17,11 +17,16 @@ function GameModeCheck ()
 	if (nMode == 2 && nType == 0)								// if we are running 2v2, do stuff
 	{
 	  EntFire("brush.blocker", "Enable", 0, 0);
-	  
+	  EntFire("navblocker.2v2", "BlockNav", 0, 0);
 	}
-	if (nMode == 1 && nType == 1)
+	else if (nMode == 1 && nType == 1)
 	{
 	  EntFire("brush.blocker", "Enable", 0, 0);				// if running demolition, do stuff
+	  EntFire("navblocker.2v2", "BlockNav", 0, 0);
+	}
+	else
+	{
+	  EntFire("navblocker.2v2", "UnblockNav", 0, 0);
 	}
    
  }

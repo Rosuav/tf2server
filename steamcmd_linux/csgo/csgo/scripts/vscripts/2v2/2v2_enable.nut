@@ -20,10 +20,12 @@ function EnableWingman()
 	  EntFire("spawnpoints.2v2", "SetEnabled", 0, 0);
 	  EntFire("brush.blocker", "Enable", 0, 0);
 	  EntFire("buyzone.2v2", "SetEnabled", 0, 0);
+	  EntFire("navblocker.2v2", "BlockNav", 0, 0);
 	}
 	else
 	{
-	EntFire("buyzone.2v2", "Disable", 0, 0);				// disable 2v2 buyzones
+	  EntFire("buyzone.2v2", "Disable", 0, 0);				// disable 2v2 buyzones
+	  EntFire("navblocker.2v2", "UnblockNav", 0, 0);
 	}
   
  }
