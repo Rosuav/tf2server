@@ -5,4 +5,4 @@ LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 0 +game_mode 1 +mapgroup mg_r
 : LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 1 +game_mode 0 +mapgroup mg_armsrace +map ar_shoots
 : LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 1 +game_mode 1 +mapgroup mg_demolition +map de_safehouse
 : LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 1 +game_mode 2 +mapgroup mg_dust247 +map de_dust2
-: LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 6 +game_mode 0 +mapgroup mg_dz_blacksite +map dz_blacksite
+: LD_LIBRARY_PATH=bin ./srcds_linux $ARGS +game_type 6 +game_mode 0 +mapgroup mg_dz_sirocco +map dz_sirocco
