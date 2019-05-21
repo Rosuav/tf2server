@@ -17,7 +17,7 @@ function GameModeCheck ()
 	   
 	if (nMode == 2 && nType == 0)								// If we're running Wingman, enable blockers. Note: Each bombsite has its own relay: "wingman.asite.relay" / "wingman.bsite.relay"
 	{
-	  EntFire("wingman.bsite.relay", "trigger", 0, 0);
+	  EntFire("wingman.asite.relay", "trigger", 0, 0);
 	  EntFire("helicopter.template", "ForceSpawn", 0, 0);
 	  EntFire("navblocker.2v2", "BlockNav", 0, 0);
 	}
