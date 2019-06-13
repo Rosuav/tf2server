@@ -1,16 +1,25 @@
-import os
+import os.path
 import sys
 import time
-pid = 29182
+pid = 0
+binary = os.path.abspath(__file__ + "/../steamcmd_linux/tf2/srcds_linux")
 print("%9s %8s %8s %8s %8s %8s" % ("time", "size", "rss", "shared", "text", "data"))
 lastinfo, count = None, 0
+
+def exe(pid):
+	try: return os.readlink("/proc/%s/exe" % pid)
+	except (PermissionError, FileNotFoundError, NotADirectoryError): return ""
+
 while True:
-	try: exe = os.readlink("/proc/%s/exe" % pid)
-	except PermissionError: exe = ""
-	if exe != "/home/rosuav/tf2server/steamcmd_linux/tf2/srcds_linux":
-		# TODO: Find the new PID by scanning for this executable
-		print("Bad PID, halting")
-		sys.exit()
+	if not pid or exe(pid) != binary:
+		# PID has changed. Find the new PID by scanning for this executable.
+		for pid in os.listdir("/proc"):
+			if exe(pid) == binary: break
+		else:
+			print("Cannot find server, waiting...")
+			pid = 0
+			time.sleep(60)
+			continue
 	with open("/proc/%s/statm" % pid) as f:
 		size, rss, shared, text, _, data, _ = f.read().strip().split()
 	info = "%8s %8s %8s %8s %8s" % (size, rss, shared, text, data)
