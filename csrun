@@ -1,4 +1,5 @@
 cd ~/tf2server/steamcmd_linux/csgo
+export HOME=/tmp
 export LD_LIBRARY_PATH=bin
 ARGS="./srcds_linux -console -game csgo -usercon +sv_setsteamaccount $STEAM_CSGO_GSLT +sv_tags drzed"
 $ARGS +game_type 0 +game_mode 1 +mapgroup mg_rosuav +map de_dust2
