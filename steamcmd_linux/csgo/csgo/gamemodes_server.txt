@@ -78,29 +78,30 @@
 						//SMGs
 						"bizon"			{ "kills"	"2" }
 						"ump45"			{ "kills"	"3" }
-						"mp7"			{ "kills"	"3" }
 						"mp5sd"			{ "kills"	"3" }
+						"mac10"			{ "kills"	"2" }
 						"p90"			{ "kills"	"5" }
 						//Shotties
 						"sawedoff"		{ "kills"	"4" }
-						"nova"			{ "kills"	"2" }
 						"xm1014"		{ "kills"	"2" }
+						"mag7"			{ "kills"	"3" }
 						//BOUNDARY
 						"knife"			{ "kills"	"1" }
 						//Rifles
 						"galilar"		{ "kills"	"5" }
 						"ak47"			{ "kills"	"5" }
 						"aug"			{ "kills"	"5" }
+						"m4a1"			{ "kills"	"5" }
+						"sg556"			{ "kills"	"5" }
 						//Special
+						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"awp"			{ "kills"	"5" }
 						"m249"			{ "kills"	"2" }
 						//Pistols
-						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"elite"			{ "kills"	"2" }
 						"deagle"		{ "kills"	"3" }
-						"fiveseven"		{ "kills"	"2" }
 						"cz75a"			{ "kills"	"5" }
-						"p250"			{ "kills"	"4" }
+						"fiveseven"		{ "kills"	"4" }
 						//Gold knife
 						"knifegg"		{ "kills"	"1" }
 					}
@@ -110,29 +111,30 @@
 						//SMGs
 						"bizon"			{ "kills"	"2" }
 						"ump45"			{ "kills"	"3" }
-						"mp7"			{ "kills"	"3" }
 						"mp5sd"			{ "kills"	"3" }
+						"mac10"			{ "kills"	"2" }
 						"p90"			{ "kills"	"5" }
 						//Shotties
 						"sawedoff"		{ "kills"	"4" }
-						"nova"			{ "kills"	"2" }
 						"xm1014"		{ "kills"	"2" }
+						"mag7"			{ "kills"	"3" }
 						//BOUNDARY
 						"knife"			{ "kills"	"1" }
 						//Rifles
 						"galilar"		{ "kills"	"5" }
 						"ak47"			{ "kills"	"5" }
 						"aug"			{ "kills"	"5" }
+						"m4a1"			{ "kills"	"5" }
+						"sg556"			{ "kills"	"5" }
 						//Special
+						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"awp"			{ "kills"	"5" }
 						"m249"			{ "kills"	"2" }
 						//Pistols
-						"glock"			{ "kills"	"10" } //Secretly another knife level
 						"elite"			{ "kills"	"2" }
 						"deagle"		{ "kills"	"3" }
-						"fiveseven"		{ "kills"	"2" }
 						"cz75a"			{ "kills"	"5" }
-						"p250"			{ "kills"	"4" }
+						"fiveseven"		{ "kills"	"4" }
 						//Gold knife
 						"knifegg"		{ "kills"	"1" }
 					}
