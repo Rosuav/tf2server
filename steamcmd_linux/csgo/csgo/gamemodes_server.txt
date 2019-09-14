@@ -91,7 +91,7 @@
 						"galilar"		{ "kills"	"5" }
 						"ak47"			{ "kills"	"5" }
 						"aug"			{ "kills"	"5" }
-						"m4a1"			{ "kills"	"5" }
+						"m4a1_silencer"		{ "kills"	"5" }
 						"sg556"			{ "kills"	"5" }
 						//Special
 						"glock"			{ "kills"	"10" } //Secretly another knife level
@@ -124,7 +124,7 @@
 						"galilar"		{ "kills"	"5" }
 						"ak47"			{ "kills"	"5" }
 						"aug"			{ "kills"	"5" }
-						"m4a1"			{ "kills"	"5" }
+						"m4a1_silencer"		{ "kills"	"5" }
 						"sg556"			{ "kills"	"5" }
 						//Special
 						"glock"			{ "kills"	"10" } //Secretly another knife level
