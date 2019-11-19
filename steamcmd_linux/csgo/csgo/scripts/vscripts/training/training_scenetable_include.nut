@@ -1,7 +1,7 @@
 includeTestString <- "!!!INCLUDE SUCCESS!!!"
 
 SceneTable <- {}
-	if (curMapName=="training1")
+	if (curMapName=="training_shooting")
 	{
 
 		//1

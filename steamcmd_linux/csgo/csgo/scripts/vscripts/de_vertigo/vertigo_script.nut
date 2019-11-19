@@ -19,11 +19,6 @@ function GameModeCheck ()
 	{
 	  EntFire("wingman.asite.relay", "trigger", 0, 0);
 	  EntFire("helicopter.template", "ForceSpawn", 0, 0);
-	  EntFire("navblocker.2v2", "BlockNav", 0, 0);
-	}
-	else
-	{
-	  EntFire("navblocker.2v2", "UnblockNav", 0, 0);
 	}
 
  }
