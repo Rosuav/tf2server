@@ -1,0 +1,6 @@
+To update netprops:
+(in CS:GO) sm_dump_netprops netprops.txt
+$ sed -i 's/ (offset [0-9]*)//' steamcmd_linux/csgo/csgo/netprops.txt
+
+(in CS:GO) sm_dump_datamaps datamaps.txt
+$ sed -i 's/ (Offset [0-9]*)//' steamcmd_linux/csgo/csgo/datamaps.txt
