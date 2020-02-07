@@ -1,0 +1,179 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	config = "scripts/ai/guardian/bt_config.kv3"
+	root =
+	{
+		type = "decorator_hiding_spot_service"
+		domain = "AllBots"
+		output_hiding_spot = "HidingSpot"
+		distance_threshold = 800
+		expiration_time = 15
+		child =
+		{
+			type = "decorator_bot_service"
+			memory_to_expire =
+			[
+				{
+					key = "ShortTermAttackMemory"
+					time = 0.7
+					distance = 0
+				},
+				{
+					key = "ShortTermDamageMemory"
+					time = 0.7
+					distance = 0
+				},
+				{
+					key = "ShortTermAreaDamageMemory"
+					time = 3
+					distance = 0
+				},
+				{
+					key = "ShortTermInvestigateMemory"
+					time = 3
+					distance = 2000
+				},
+				{
+					key = "LongTermMemory"
+					time = 10
+					distance = 500
+				},
+				{
+					domain = "AllBots"
+					key = "Threats"
+					time = 10
+					distance = 0
+				}
+			]
+			tagged_entities_to_expire =
+			[
+				"EngagedEntities"
+			]
+			child =
+			{
+				type = "parallel"
+				children =
+				[
+					{
+						type = "decorator_repeat"
+						child =
+						{
+							type = "parallel"
+							children =
+							[
+								// memorize enemies through vision
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_memorize_enemies_vision.kv3"
+									name = "MemorizeEnemiesVision"
+								},
+								// memorize noises happening right now
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_memorize_noises.kv3"
+									name = "MemorizeNoises"
+								},
+								// record the nearest memorized event to investigate
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_memorize_nearest_investigation.kv3"
+									name = "MemorizeNearestInvestigation"
+								},
+								// memorize incoming grenades
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_memorize_area_damage_grenades.kv3"
+									name = "MemorizeAreaDamageGrenades"
+								},
+								// memorize incoming damage
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_memorize_damage.kv3"
+									name = "MemorizeDamage"
+								},
+								// memorize threats
+								{
+									type = "subtree"
+									file = "scripts/ai/guardian/modules/bt_memorize_threats.kv3"
+									name = "MemorizeThreats"
+								},
+								// memorize whether we're standing on damaging area
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_memorize_area_damage_current.kv3"
+									name = "MemorizeAreaDamageCurrent"
+								}
+							]
+						}
+					},
+					{
+						type = "decorator_repeat"
+						child =
+						{
+							type = "selector"
+							children =
+							[
+								// go grab the bomb if there's one available
+								{
+									type = "subtree"
+									file = "scripts/ai/collect_stuff.kv3"
+									name = "PickupStuffIfNearby"
+								},
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_face_damage_inflictor.kv3"
+									name = "FaceDamageInflictor"
+								},
+								// Else: attack if we see an enemy (without shield)
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_attack.kv3"
+									name = "Attack"
+								},
+								{
+									type = "subtree"
+									file = "scripts/ai/guardian/modules/bt_clear_threats_within_fov.kv3"
+									name = "ClearThreatsWithinFov"
+								},
+								{
+									type = "subtree"
+									file = "scripts/ai/guardian/modules/bt_select_nearby_threat.kv3"
+									name = "SelectNearbyThreat"
+								},
+								{
+									type = "subtree"
+									file = "scripts/ai/modules/bt_heal_if_needed.kv3"
+									name = "HealIfNeeded"
+								},
+								// Else: find a hex we haven't been in, and go there (TODO)
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}
+// There's an "action_say", but I haven't figured out how it works. TODO: Try it in
+// classic modes, in case it's team chat.
+
+// AI decision tree
+// - If threats nearby:
+//   - If we have any gun, engage threats
+//   - Else try to hide and/or loot
+// - If we have no knife/taser or gun:
+//   - Look for any prop_loot_crate or prop_money_crate
+//   - Select fists
+//   - Approach nearest, action_repeat attack
+// - If we have knife/taser but no primary:
+//   - Look for prop_loot_crate or prop_money_crate or prop_metal_crate
+//   - Select taser if recharged else knife
+//   - Approach nearest, action_repeat attack
+// - If we have pistol but no knife, taser, or primary:
+//   - Locate prop_loot_crate or prop_money_crate nearby, or prop_metal_crate a bit wider radius
+//   - If loot/money, use fists (see above)
+//   - If metal, aim with gun
+// - If we have a poor weapon and there is a good one nearby:
+//   - Approach good weapon
+//   - Select poor weapon
+//   - Throw weapon
