@@ -1,0 +1,98 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	config = "scripts/ai/guardian/bt_config.kv3"
+	root =
+	{
+		type = "decorator_hiding_spot_service"
+		domain = "AllBots"
+		output_hiding_spot = "HidingSpot"
+		distance_threshold = 800
+		expiration_time = 15
+		child =
+		{
+			type = "decorator_bot_service"
+			memory_to_expire =
+			[
+				{
+					key = "ShortTermAttackMemory"
+					time = 0.7
+					distance = 0
+				},
+				{
+					key = "ShortTermDamageMemory"
+					time = 0.7
+					distance = 0
+				},
+				{
+					key = "ShortTermAreaDamageMemory"
+					time = 3
+					distance = 0
+				},
+				{
+					key = "ShortTermInvestigateMemory"
+					time = 3
+					distance = 2000
+				},
+				{
+					key = "LongTermMemory"
+					time = 10
+					distance = 500
+				},
+				{
+					domain = "AllBots"
+					key = "Threats"
+					time = 10
+					distance = 0
+				}
+			]
+			tagged_entities_to_expire =
+			[
+				"EngagedEntities"
+			]
+			child =
+			{
+				type = "sequencer"
+				children =
+				[
+					{
+						type = "action_move_to"
+						destination = "1700.00 450.0 119.0"
+						movement_type = "BT_ACTION_MOVETO_RUN"
+						route_type = "BT_ACTION_MOVETO_FASTEST_ROUTE"
+					},
+					{
+						type = "action_say"
+						phrase = "'Hello world'"
+					},
+					{
+						type = "action_wait"
+						wait_time_min = 5.0
+						wait_time_max = 5.0
+					},
+					{
+						type = "action_say"
+						phrase = "Goodbye world"
+					},
+					{
+						type = "action_move_to"
+						destination = "-700.00 2500.0 -16.0"
+						movement_type = "BT_ACTION_MOVETO_RUN"
+						route_type = "BT_ACTION_MOVETO_FASTEST_ROUTE"
+					},
+					{
+						type = "action_say"
+						phrase = "Testing"
+					},
+					{
+						type = "action_wait"
+						wait_time_min = 10.0
+						wait_time_max = 15.0
+					},
+					{
+						type = "action_commit_suicide"
+					},
+				]
+			}
+		}
+	}
+}
