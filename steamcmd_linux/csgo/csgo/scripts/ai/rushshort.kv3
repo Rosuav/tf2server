@@ -25,6 +25,10 @@
 							threat = "NearestThreatMemory"
 						},
 						{
+							type = "action_say"
+							phrase = "'Hello'"
+						},
+						{
 							type = "action_move_to"
 							destination = "101.35 1431.90 -0.38"
 							movement_type = "BT_ACTION_MOVETO_RUN"
@@ -56,6 +60,10 @@
 							route_type = "BT_ACTION_MOVETO_FASTEST_ROUTE"
 							hiding_spot = "HidingSpot"
 							threat = "NearestThreatMemory"
+						},
+						{
+							type = "action_say"
+							phrase = "Testing"
 						},
 						{
 							type = "action_move_to"
