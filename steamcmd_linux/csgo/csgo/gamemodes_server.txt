@@ -208,6 +208,27 @@
 				}
 			}
 		}
+
+		"cooperative"
+		{
+			"gameModes"
+			{
+				"cooperative"
+				{
+					"exec"
+					{
+						"exec" "server_last.cfg"
+					}
+				}
+				"coopmission"
+				{
+					"exec"
+					{
+						"exec" "server_last.cfg"
+					}
+				}
+			}
+		}
 	}
 
 	//////////////////////////////////////////////////////////////////////////////////////////////
