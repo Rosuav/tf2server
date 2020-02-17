@@ -218,6 +218,7 @@
 					"exec"
 					{
 						"exec" "server_last.cfg"
+						"exec" "oldguardian.cfg"
 					}
 				}
 				"coopmission"

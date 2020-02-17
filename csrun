@@ -1,12 +1,38 @@
+#!/bin/bash
 cd ~/tf2server/steamcmd_linux/csgo
 export HOME=/tmp # Break $HOME so it can't find ~/.steam/sdk32/steamclient.so and thus won't get confuzzled by the Steam GUI
 export LD_LIBRARY_PATH=bin
 ARGS="./srcds_linux -console -game csgo -usercon -authkey $STEAM_API_KEY +sv_setsteamaccount $STEAM_CSGO_GSLT +sv_tags drzed"
-$ARGS +game_type 0 +game_mode 1 +mapgroup mg_rosuav +map de_dust2
+case $1 in
+  guardian_*)
+    fn=$1
+    map=${fn#guardian_}
+    map=${map%.cfg}
+    map=${map%_alt[0-9]}
+    : TODO: Search the workshop for any map that isn't found, and
+    : offer a host_workshop_map command to fetch it. Steam ID
+    : 76561198082857351 is the CS:GO Official account. Once it's
+    : been downloaded once, this code will all work.
+    weap=`awk '/mp_guardian_special_weapon_needed/{print $NF}' csgo/maps/cfg/$fn|tr -d '\r'`
+    case $weap in
+      "") echo Old guardian missions with blank weapon may not work ;;
+      any) weap='""' ;;
+      *) weap='"%weapon_'$weap'%"' ;;
+    esac
+    echo "
+	execwithwhitelist $fn */maps
+	bot_quota 5
+	bot_quota_mode normal
+	mp_guardian_special_weapon_needed $weap
+    " >csgo/cfg/oldguardian.cfg
+    $ARGS +game_type 4 +game_mode 0 +map $map
+  ;;
+  *)
+: $ARGS +game_type 0 +game_mode 1 +mapgroup mg_rosuav +map de_dust2
 : $ARGS +game_type 0 +game_mode 2 +mapgroup mg_de_inferno +map de_inferno
 : $ARGS +game_type 1 +game_mode 0 +mapgroup mg_armsrace +map ar_shoots
 : $ARGS +game_type 1 +game_mode 1 +mapgroup mg_demolition +map de_safehouse
 : $ARGS +game_type 1 +game_mode 2 +mapgroup mg_dust247 +map de_dust2
-: $ARGS +game_type 4 +game_mode 0 +mapgroup mg_dust247 +map de_dust2 # Guardian
 : $ARGS +game_type 6 +game_mode 0 +mapgroup mg_dz_blacksite +map dz_blacksite
 : $ARGS +game_type 6 +game_mode 0 +mapgroup mg_dz_sirocco +map dz_sirocco
+esac
