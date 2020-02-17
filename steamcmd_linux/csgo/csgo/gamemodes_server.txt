@@ -22,11 +22,6 @@
 					{
 						"exec"		"server_last.cfg" 
 					}
-
-					"mapgroupsMP"
-					{
-						"mg_rosuav"	""
-					}
 				}
 
 				/////////////////////////////////////////

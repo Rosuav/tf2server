@@ -28,7 +28,7 @@ case $1 in
     $ARGS +game_type 4 +game_mode 0 +map $map
   ;;
   *)
-$ARGS +game_type 0 +game_mode 1 +mapgroup mg_rosuav +map de_dust2
+$ARGS +game_type 0 +game_mode 1 +mapgroup mg_dust247 +map de_dust2
 : $ARGS +game_type 0 +game_mode 2 +mapgroup mg_de_inferno +map de_inferno
 : $ARGS +game_type 1 +game_mode 0 +mapgroup mg_armsrace +map ar_shoots
 : $ARGS +game_type 1 +game_mode 1 +mapgroup mg_demolition +map de_safehouse
