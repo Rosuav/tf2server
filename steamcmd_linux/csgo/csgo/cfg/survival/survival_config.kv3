@@ -112,6 +112,7 @@
 		{ name = "safe"					entity = "func_survival_c4_target"					default_ammo = -1	security_door_value = 0		highlight_color = [0, 255, 0]	},
 		
 		{ name = "exploding_barrel"		entity = "prop_exploding_barrel"					default_ammo = -1	security_door_value = 0 	highlight_color = [0, 0, 0]	},
+		{ name = "weapon_zone_repulsor"	entity = "weapon_zone_repulsor"						default_ammo = -1	security_door_value = 0 	highlight_color = [0, 255, 0]	},
 		
 		// reveal nearest weapon crate (not really an entity)
 		{ name = "reveal_nearest_weapon_crate"	entity = "reveal_nearest_weapon_crate"		default_ammo = -1	security_door_value = 0		highlight_color = [0, 255, 0]	},
@@ -218,6 +219,11 @@
 		safe_list = 
 		[
 			{ chance = 1				items = [ { name = "safe" } ]	}
+		]
+
+		repulsor_list = 
+		[
+			{ chance = 1				items = [ { name = "weapon_zone_repulsor" } ]	}
 		]
 
 		jammer_list = 
@@ -489,6 +495,7 @@
 	gamestart = 
 	[
 		{ name = "hostages"				content = "hostage_list"				quantity = 3			weight_radius = 2000		priority = 0	},
+		{ name = "repulsor"				content = "repulsor_list"				quantity = 1			weight_radius = 4000		priority = 1	},
 		{ name = "safes"				content = "safe_list"					quantity = 2			weight_radius = 4000		priority = 1	},
 		{ name = "large_metal_crates"	content = "large_metal_crate"			quantity = 8			weight_radius = 1200		priority = 2	},
 		{ name = "small_metal_crates"	content = "small_metal_crate"			quantity = 12			weight_radius = 1000		priority = 2	},
