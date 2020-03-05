@@ -1285,12 +1285,13 @@ function EntranceElevatorDown()
 	EntFire( "@entranceelev_playertrigger", "Disable", "", 0 );			// coop trigger
 
 	EntFire( "startelevator.topdoor", "SetAnimation", "close", 0 );		
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_1" + ")", 0 );	
+	
+	EntFire( "@startelevup-blocker", "Enable", "close", 0 );		
 	
 	EntFire( "startelevator.topdoor.snd", "PlaySound", "", 0 );	
 	
 	EntFire( "startelevator-door2", "SetAnimation", "close", 0 );	
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_2" + ")", 0.25 );	
+
 
 	EntFire( "startelevator-mover", "StartForward", "", 5 );	
 	
@@ -1310,12 +1311,13 @@ function EntranceElevatorArrived()
 	EntFire( "@shake.global.medium", "Startshake", "", 0 );	
 
 	EntFire( "startelevator.bottomdoor", "SetAnimation", "open", 2 );	
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_1" + ")", 2 );	
 	
 	EntFire( "startelevator.bottomdoor.snd", "PlaySound", "", 2 );	
 	
 	EntFire( "startelevator-door1", "SetAnimation", "open", 2 );
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_2" + ")", 2.25 );		
+	
+	EntFire( "@startelevdown-blocker", "Disable", "", 2 );		
+
 
 	EntFire( "@coopscript", "RunScriptCode", "EntranceElevatorAmbush()", 2 );	
 	
@@ -1445,12 +1447,10 @@ function EscapeElevatorStart()		// called from coop button by elevator
 	EntFire( "@entranceelevup_playertrigger", "Enable", "", 0 );			// elevator up coop trigger
 	
 	EntFire( "startelevator.bottomdoor", "SetAnimation", "open", 22 );	
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_1" + ")", 22 );	
 	
 	EntFire( "startelevator.bottomdoor.snd", "PlaySound", "", 22 );	
 	
 	EntFire( "startelevator-door1", "SetAnimation", "open", 22 );
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_2" + ")", 2.25 );		
 }
 
 function WaveSpawningStart()
@@ -1476,12 +1476,13 @@ function EntranceElevatorUp()
 EntFire( "@entranceelevup_playertrigger", "Disable", "", 0 );
 
 EntFire( "startelevator-door1", "SetAnimation", "close", 0 );
-//EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_1" + ")", 0 );	
+
+EntFire( "@startelevdown-blocker", "Enable", "", 0 );		
 
 EntFire( "startelevator.bottomdoor.snd", "PlaySound", "", 0 );	
 
 EntFire( "startelevator.bottomdoor", "SetAnimation", "close", 0 );
-//EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_2" + ")", 0.25 );	
+
 
 EntFire( "startelevator-mover", "StartBackward", "", 3 );			// starts elevator back up 
 
@@ -1714,12 +1715,11 @@ function ExitElevatorArrivedDown()
 {
 
 	EntFire( "exitelev.bottomdoor", "SetAnimation", "open", 1 );
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_2" + ")", 1 );	
 
 	EntFire( "exitelev-door1", "SetAnimation", "open", 1 );
 	
 	EntFire( "exitelev.bottomdoor.snd", "PlaySound", "", 1 );
-//	EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_1" + ")", 0.25 );	
+
 }
 
 function PlayersInExitElevatorUp( amount )
@@ -1737,12 +1737,13 @@ function ExitElevatorUp()
 EntFire( "@exitelevup_playertrigger", "Disable", "", 0 );
 
 EntFire( "exitelev-door1", "SetAnimation", "close", 0 );
-//EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_1" + ")", 0 );	
 
 EntFire( "exitelev.bottomdoor.snd", "PlaySound", "", 0 );
 
 EntFire( "exitelev.bottomdoor", "SetAnimation", "close", 0 );
-//EntFire( "@coopscript", "RunScriptCode", "SoundEmitter(" + "SND_ELEVATORDOOR_2" + ")", 0.25 );	
+EntFire( "@exitelev-blocker", "Enable", "", 0 );
+
+
 
 EntFire( "exitelev-mover", "StartForward", "", 3 );	
 
@@ -1818,6 +1819,7 @@ debugPrint("Enemies remaining: " + FranzExteriorRemainingEnemies);
 		
 		debugPrint("Outer guys dead, unblock path forward");
 		EntFire( "@franz_pipeclimb_block", "Disable", "", 0 );	
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 		
 		}
 
@@ -1920,6 +1922,7 @@ printl("Boat hit : " + FranzBoatHit);
 
 function FranzFinaleStart()		// when players reach top of ladder
 {
+	ScriptCoopMissionSetDeadPlayerRespawnEnabled( false );		// no more respawning
 
 	EntFire( "@relay_heli_spotlight", "Trigger", "", 0 );		// parent spotlight to helicopter, start helicopter fly-in
 	EntFire( "@franz_boat_hitbutton", "Unlock", "", 10 );		// func_button used to detect hits on boat
@@ -2488,6 +2491,8 @@ function OnWaveCompleted()
 		EntFire( "@door_storage_reinf", "Open", "", 2 );
 		
 		EntFire( "@trigger_exit_squad", "Enable", "", 1 );		// triggers function StorageSpawnExitSquad
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 	}
 	else if ( wave == 6 && MISSION == 2)		// storage reinf
 	{
@@ -2530,6 +2535,8 @@ function OnWaveCompleted()
 		
 		EntFire( "@smokgren_box_fire", "SetGlowEnabled", "", 1.5 );		// glow box
 		EntFire( "@smokegren_button", "Unlock", "", 2 );		// let players pick up smoke grenades
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 	}
 	else if ( wave == 10 && MISSION == 2)		// destroyed tunnels
 	{
@@ -2542,6 +2549,8 @@ function OnWaveCompleted()
 	
 		EntFire( "enemy.*", "SetDisabled", "", 0 );
 		EntFire( "enemy.m2_wave10", "SetEnabled", "", 0 );
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 	}
 	else if ( wave == 11 && MISSION == 2)		// destroyed tunnels reinf
 	{
@@ -2554,6 +2563,8 @@ function OnWaveCompleted()
 		EntFire( "@door_venttunnel", "Unlock", "", 1 );	
 		
 		EntFire( "@trigger_ctrlroom_ext_spawn", "Enable", "", 0 );	
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 	}
 	else if ( wave == 12 && MISSION == 2)		// destroyed tunnels reinf
 	{
@@ -2569,6 +2580,8 @@ function OnWaveCompleted()
 		EntFire( "@door_ventcontrols", "Unlock", "", 1 );	
 		
 		EntFire( "@trigger_ctrlroom_spawn", "Enable", "", 0 );	
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 	}
 	else if ( wave == 13 && MISSION == 2)		// control room guys
 	{
@@ -2599,6 +2612,7 @@ function OnWaveCompleted()
 		EntFire( "CT_*", "SetDisabled", "", 0 );
 		EntFire( "CT_11_m2", "SetEnabled", "", 0 );
 
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 		
 		EntFire( "@exitelev_coopbutton", "Trigger", "", 0 );		// enable coop button for elevator
 	}
@@ -2610,6 +2624,8 @@ function OnWaveCompleted()
 		EntFire( "enemy.m2_wave15", "SetEnabled", "", 0 );
 		
 		EntFire( "@exitelevup_playertrigger", "Enable", "", 0 );
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 	}
 	else if ( wave == 16 && MISSION == 2)		// franz exterior
 	{
@@ -2620,6 +2636,8 @@ function OnWaveCompleted()
 	
 		EntFire( "enemy.*", "SetDisabled", "", 0 );
 		EntFire( "enemy.m2_wave16", "SetEnabled", "", 0 );
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 		
 		EntFire( "@franz_exterior_speech", "Enable", "", 1 );
 		
@@ -2632,6 +2650,8 @@ function OnWaveCompleted()
 		EntFire( "enemy.m2_wave17", "SetEnabled", "", 0 );
 		
 		EntFire( "@franzcorr_playertrigger", "Enable", "", 0 );
+		
+		EntFire( "@coopscript", "RunScriptCode", "RespawnPlayerState( true )", 1 );
 		
 	}
 	else if ( wave == 18 && MISSION == 2)		// ladder guy and overlook
