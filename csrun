@@ -13,6 +13,9 @@ case $1 in
     : offer a host_workshop_map command to fetch it. Steam ID
     : 76561198082857351 is the CS:GO Official account. Once it's
     : been downloaded once, this code will all work.
+    : TODO: Also support newer missions, which don't have their
+    : map file names in the config file name. But they don't need
+    : any cvar translation, so it is a bit easier.
     weap=`awk '/mp_guardian_special_weapon_needed/{print $NF}' csgo/maps/cfg/$fn|tr -d '\r'`
     case $weap in
       "") echo Old guardian missions with blank weapon may not work ;;
