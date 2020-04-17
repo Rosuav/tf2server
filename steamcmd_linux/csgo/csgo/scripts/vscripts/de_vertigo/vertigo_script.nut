@@ -1,3 +1,15 @@
+vHelicopterShot <- false;
+
+
+
+function HelicopterFiredAt()		// called when heli shot
+{
+	if (ScriptIsWarmupPeriod() == false)
+		{
+			vHelicopterShot = true;
+		}
+}
+
 // This function is called from the map OnMapSpawn
 
 function GameModeCheck ()
@@ -17,8 +29,12 @@ function GameModeCheck ()
 	   
 	if (nMode == 2 && nType == 0)								// If we're running Wingman, enable blockers. Note: Each bombsite has its own relay: "wingman.asite.relay" / "wingman.bsite.relay"
 	{
-	  EntFire("wingman.asite.relay", "trigger", 0, 0);
-	  EntFire("helicopter.template", "ForceSpawn", 0, 0);
+	  EntFire("wingman.bsite.relay", "trigger", 0, 0);
+	  
+	  if (vHelicopterShot == false)
+	  {
+		EntFire("helicopter.template", "ForceSpawn", 0, 0);
+	  }
 	}
 
  }
@@ -58,5 +74,22 @@ function WorkplaceInjuryDisplay ()
 
 
 
+// ragdoll detector
 
+ent <- null;
+vDone <- false;
 
+function RagdollDetect()
+{
+
+	local origin = self.GetCenter();
+
+	if ( (ent = Entities.FindByClassnameWithin (null, "cs_ragdoll", origin, 32.0)) != null && vDone == false)
+	{
+	
+		vDone = true;
+		EntFire ("!self", "FireUser1", 0, 0);
+		
+	}
+
+}
