@@ -11,6 +11,10 @@ PLAYER_CT <- null;
 
 WARMUP <- ScriptIsWarmupPeriod();
 
+MAPNAME <- GetMapName();
+
+V_ZERO <- (Vector (0.0, 0.0, 0.0));
+
 SPAWN_T <- Entities.FindByName(null, INSTANCE_PREFIX + "-tspawn");
 SPAWN_CT <- Entities.FindByName(null, INSTANCE_PREFIX + "-ctspawn");
 
@@ -27,6 +31,16 @@ WEAPON <- [
 	"weapon_usp_silencer",
 	"weapon_glock"
 ]
+
+function OnPostSpawn()
+{
+	// check if we need to do map specific stuff
+	if (MAPNAME == "de_shortnuke" || MAPNAME == "de_nuke")
+	{
+		EntFire( "@skybox_swap", "Trigger", "", 0.0,  null );	// skybox_swapper entity 
+	}
+	
+}
 
 function DebugInfo()
 {
@@ -116,13 +130,16 @@ function ArenaStart()		// called when the arena has two players, checks every .1
 
 	//	EntFire( "@warmup.cmd", "Command", "r_cleardecals", 0.0,  PLAYER_CT );		// clear decals command run on client, so everybody isnt affected
 	//	EntFire( "@warmup.cmd", "Command", "r_cleardecals", 0.0,  PLAYER_T );
+	
 		
 		// reset player positions, to ensure survivor is not spawn camping
 		PLAYER_T.SetOrigin( SPAWN_T.GetOrigin() );
 		PLAYER_T.SetAngles( 0, SPAWN_T.GetAngles().y, 0 );
+		PLAYER_T.SetVelocity(V_ZERO);
 		
 		PLAYER_CT.SetOrigin( SPAWN_CT.GetOrigin() );
 		PLAYER_CT.SetAngles( 0, SPAWN_CT.GetAngles().y, 0 );
+		PLAYER_CT.SetVelocity(V_ZERO);
 		
 		// strip all guns
 		StripGuns();
