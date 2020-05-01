@@ -1,0 +1,50 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	type = "decorator_run_once"
+	domain = "'StratThrow'"
+	child =
+	{
+		type = "sequencer"
+		children =
+		[
+			{
+				type = "action_set_global_counter"
+				input_name = "'RushSite'"
+				input_value = 0
+			},
+			{
+				type = "action_move_to"
+				destination = "-1900 60 0"
+				movement_type = "BT_ACTION_MOVETO_RUN"
+				route_type = "BT_ACTION_MOVETO_FASTEST_ROUTE"
+				additional_arrival_epsilon_2d = 0.2
+			},
+			{
+				type = "action_teleport"
+				destination = "-1667 928 29"
+			},
+			{
+				type = "action_equip_weapon"
+				weapon = "weapon_smokegrenade"
+			},
+			{
+				type = "action_look_at"
+				input_angles = "-57.12 99.88 0.000000"
+			},
+			{
+				type = "action_pull_trigger"
+			},
+			{
+				type = "action_set_global_counter"
+				input_name = "'RushSite'"
+				input_value = 1
+			},
+			{
+				type = "action_move_to"
+				destination = "-1808.000732 1138.256592 96.871155"
+				movement_type = "BT_ACTION_MOVETO_RUN"
+				route_type = "BT_ACTION_MOVETO_FASTEST_ROUTE"
+			}
+		]
+	}
+}
