@@ -20,6 +20,8 @@ SPAWN_CT <- Entities.FindByName(null, INSTANCE_PREFIX + "-ctspawn");
 
 RESET <- false;
 
+RELAY_CLEARDECAL <- null;
+
 WEAPON <- [	
 	"weapon_ak47",
 	"weapon_galilar",
@@ -35,11 +37,21 @@ WEAPON <- [
 function OnPostSpawn()
 {
 	// check if we need to do map specific stuff
-	if (MAPNAME == "de_shortnuke" || MAPNAME == "de_nuke")
+	if (MAPNAME == "de_shortnuke" || MAPNAME == "de_nuke" || MAPNAME == "de_inferno")
 	{
 		EntFire( "@skybox_swap", "Trigger", "", 0.0,  null );	// skybox_swapper entity 
 	}
 	
+	CreateRelay();
+	
+}
+
+function CreateRelay()
+{
+		RELAY_CLEARDECAL = Entities.CreateByClassname( "logic_relay" );
+		RELAY_CLEARDECAL.ValidateScriptScope();
+		
+		EntFireByHandle(RELAY_CLEARDECAL, "addoutput", "OnTrigger @warmup.cmd,Command,r_cleardecals", 0, null, null);
 }
 
 function DebugInfo()
@@ -130,6 +142,10 @@ function ArenaStart()		// called when the arena has two players, checks every .1
 
 	//	EntFire( "@warmup.cmd", "Command", "r_cleardecals", 0.0,  PLAYER_CT );		// clear decals command run on client, so everybody isnt affected
 	//	EntFire( "@warmup.cmd", "Command", "r_cleardecals", 0.0,  PLAYER_T );
+	
+		// clear arena decals
+		EntFireByHandle( RELAY_CLEARDECAL, "Trigger", "", 0.0, PLAYER_CT, null )
+		EntFireByHandle( RELAY_CLEARDECAL, "Trigger", "", 0.1, PLAYER_T, null )
 	
 		
 		// reset player positions, to ensure survivor is not spawn camping
