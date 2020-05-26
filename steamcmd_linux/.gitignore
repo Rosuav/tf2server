@@ -27,8 +27,19 @@ csgo/bin
 csgo/steamapps
 csgo/*.txt
 csgo/platform
-csgo/csgo/maps
-csgo/csgo/resource
+
+# Ignore the map files, which are large; but hang onto the Co-op Strike
+# mission from Shattered Web, aka coop_kasbah.
+csgo/csgo/maps/*
+!csgo/csgo/maps/graphs
+csgo/csgo/maps/graphs/*
+!csgo/csgo/maps/graphs/*coop_kasbah*
+!csgo/csgo/maps/*coop_kasbah*
+csgo/csgo/resource/*
+!csgo/csgo/resource/overviews
+csgo/csgo/resource/overviews/*
+!csgo/csgo/resource/overviews/*coop_kasbah*
+
 *.dll
 csgo/csgo/sound/music
 csgo/thirdpartylegalnotices.doc
