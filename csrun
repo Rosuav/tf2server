@@ -39,4 +39,5 @@ $ARGS +game_type 0 +game_mode 1 +mapgroup mg_dust247 +map de_dust2
 : $ARGS +game_type 6 +game_mode 0 +mapgroup mg_dz_blacksite +map dz_blacksite
 : $ARGS +game_type 6 +game_mode 0 +mapgroup mg_dz_sirocco +map dz_sirocco
 : $ARGS +game_type 4 +game_mode 1 +map coop_kasbah
+: $ARGS +game_type 4 +game_mode 0 +map gd_crashsite
 esac
