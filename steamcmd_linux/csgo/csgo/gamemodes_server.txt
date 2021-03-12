@@ -42,6 +42,14 @@
 					}
 
 				}
+
+				"scrimcomp2v2"
+				{
+					"exec"
+					{
+						"exec"		"server_last.cfg"
+					}
+				}
 			}
 		}
 
