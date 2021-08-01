@@ -159,32 +159,33 @@
 						"mg_demolition"		""
 					}
 
+					//Default: M4A4, P90, MP5, Deagle, Nova, P250, P2K, Scout, AWP, Dak
 					"weaponprogression_ct"
 					{
-						"mp5sd"			{ "kills"	"1" }
-						"mag7"			{ "kills"	"1" }
-						"p90"			{ "kills"	"1" }
-						"m4a1"			{ "kills"	"1" }
 						"aug"			{ "kills"	"1" }
-						"awp"			{ "kills"	"1" }
-						"negev"			{ "kills"	"1" }
-						"scar20"		{ "kills"	"1" }
+						"mp5sd"			{ "kills"	"1" }
+						"mp9"			{ "kills"	"1" }
 						"deagle"		{ "kills"	"1" }
+						"mag7"			{ "kills"	"1" }
+						"fiveseven"		{ "kills"	"1" }
+						"hkp2000"		{ "kills"	"1" }
 						"ssg08"			{ "kills"	"1" }
+						"awp"			{ "kills"	"1" }
+						"scar20"		{ "kills"	"1" }
 					}
 		
 					"weaponprogression_t"
 					{
-						"mp5sd"			{ "kills"	"1" }
-						"sawedoff"		{ "kills"	"1" }
-						"p90"			{ "kills"	"1" }
-						"ak47"			{ "kills"	"1" }
 						"sg556"			{ "kills"	"1" }
-						"awp"			{ "kills"	"1" }
-						"negev"			{ "kills"	"1" }
-						"g3sg1"			{ "kills"	"1" }
+						"mp5sd"			{ "kills"	"1" }
+						"mac10"			{ "kills"	"1" }
 						"deagle"		{ "kills"	"1" }
+						"sawedoff"		{ "kills"	"1" }
+						"tec9"			{ "kills"	"1" }
+						"glock"			{ "kills"	"1" }
 						"ssg08"			{ "kills"	"1" }
+						"awp"			{ "kills"	"1" }
+						"g3sg1"			{ "kills"	"1" }
 					}
 				}
 
