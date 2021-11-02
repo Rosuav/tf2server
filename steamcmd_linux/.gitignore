@@ -58,3 +58,4 @@ satisfactory/Engine/Binaries
 *.bmp
 *.ico
 *.ttf
+CrashReportClient.ini
