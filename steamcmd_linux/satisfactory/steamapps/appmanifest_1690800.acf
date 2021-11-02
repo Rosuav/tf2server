@@ -1,0 +1,36 @@
+"AppState"
+{
+	"appid"		"1690800"
+	"Universe"		"1"
+	"name"		"Satisfactory Dedicated Server"
+	"StateFlags"		"4"
+	"installdir"		"SatisfactoryDedicatedServer"
+	"LastUpdated"		"1635817701"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"4508056194"
+	"buildid"		"7620752"
+	"LastOwner"		"76561201417360410"
+	"BytesToDownload"		"1107098720"
+	"BytesDownloaded"		"1107098720"
+	"BytesToStage"		"4508056194"
+	"BytesStaged"		"4508056194"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"1006"
+		{
+			"manifest"		"8623715305920777347"
+			"size"		"63297966"
+		}
+		"1690802"
+		{
+			"manifest"		"3850543873782177023"
+			"size"		"4444758228"
+		}
+	}
+	"UserConfig"
+	{
+	}
+}

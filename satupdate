@@ -1,0 +1,7 @@
+cd ~/tf2server/steamcmd_linux
+./steamcmd.sh <<EOT
+login anonymous
+force_install_dir ./satisfactory
+app_update 1690800
+quit
+EOT

@@ -45,4 +45,16 @@ csgo/csgo/sound/music
 csgo/thirdpartylegalnotices.doc
 csgo/csgo/materials
 csgo/csgo/panorama/
-csgo/csgo/*.log
+*.log
+
+# Satisfactory has a lot of uninteresting files.
+*.sym
+*.debug
+*.modules
+satisfactory/Engine/Binaries
+*.pak
+*.uasset
+*.png
+*.bmp
+*.ico
+*.ttf
