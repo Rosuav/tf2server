@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ~/tf2server/steamcmd_linux/satisfactory
-export HOME=/tmp # May or may not be necessary, probably doesn't hurt (see csrun)
+export HOME=/home/rosuav/tf2server/home
 export LD_LIBRARY_PATH=linux64
 ./Engine/Binaries/Linux/UE4Server-Linux-Shipping FactoryGame -NOSTEAM
