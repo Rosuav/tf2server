@@ -1,0 +1,58 @@
+"AppState"
+{
+	"appid"		"330830"
+	"Universe"		"1"
+	"name"		"Tales from the Borderlands"
+	"StateFlags"		"4"
+	"installdir"		"Tales from the Borderlands"
+	"LastUpdated"		"1613839916"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"8197753196"
+	"buildid"		"6086951"
+	"LastOwner"		"76561198043731689"
+	"BytesToDownload"		"0"
+	"BytesDownloaded"		"0"
+	"BytesToStage"		"0"
+	"BytesStaged"		"0"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"330831"
+		{
+			"manifest"		"4576020385638401264"
+			"size"		"1707033487"
+		}
+		"330833"
+		{
+			"manifest"		"3943488974245710598"
+			"size"		"1247115314"
+		}
+		"330835"
+		{
+			"manifest"		"9163515545867143494"
+			"size"		"1709458131"
+		}
+		"330837"
+		{
+			"manifest"		"2691774926395291229"
+			"size"		"1773401979"
+		}
+		"330839"
+		{
+			"manifest"		"1393924725138498575"
+			"size"		"1760744285"
+		}
+	}
+	"InstallScripts"
+	{
+		"330831"		"installscript.vdf"
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+		"platform_override_dest"		"linux"
+		"platform_override_source"		"windows"
+	}
+}

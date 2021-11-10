@@ -1,0 +1,34 @@
+"AppState"
+{
+	"appid"		"234710"
+	"Universe"		"1"
+	"name"		"Poker Night 2"
+	"StateFlags"		"4"
+	"installdir"		"Poker Night 2"
+	"LastUpdated"		"1582991918"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"529018190"
+	"buildid"		"66417"
+	"LastOwner"		"76561198043731689"
+	"BytesToDownload"		"0"
+	"BytesDownloaded"		"0"
+	"BytesToStage"		"0"
+	"BytesStaged"		"0"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"234711"
+		{
+			"manifest"		"606659319083740705"
+			"size"		"529018190"
+		}
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+		"platform_override_dest"		"linux"
+		"platform_override_source"		"windows"
+	}
+}

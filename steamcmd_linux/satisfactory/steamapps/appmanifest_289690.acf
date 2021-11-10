@@ -1,0 +1,43 @@
+"AppState"
+{
+	"appid"		"289690"
+	"Universe"		"1"
+	"name"		"Lara Croft and the Temple of Osiris"
+	"StateFlags"		"4"
+	"installdir"		"Lara Croft and the Temple of Osiris"
+	"LastUpdated"		"1584810999"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"3329781722"
+	"buildid"		"477027"
+	"LastOwner"		"76561198043731689"
+	"BytesToDownload"		"0"
+	"BytesDownloaded"		"0"
+	"BytesToStage"		"0"
+	"BytesStaged"		"0"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"289691"
+		{
+			"manifest"		"310728074338435953"
+			"size"		"3310688106"
+		}
+		"289692"
+		{
+			"manifest"		"6572550386982638215"
+			"size"		"19093616"
+		}
+	}
+	"InstallScripts"
+	{
+		"289691"		"installscript.vdf"
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+		"platform_override_dest"		"linux"
+		"platform_override_source"		"windows"
+	}
+}

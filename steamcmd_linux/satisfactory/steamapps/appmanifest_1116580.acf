@@ -1,0 +1,34 @@
+"AppState"
+{
+	"appid"		"1116580"
+	"Universe"		"1"
+	"name"		"Shady Part of Me"
+	"StateFlags"		"4"
+	"installdir"		"Shady Part of Me"
+	"LastUpdated"		"1613116661"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"2906579830"
+	"buildid"		"6066797"
+	"LastOwner"		"76561198043731689"
+	"BytesToDownload"		"1465050400"
+	"BytesDownloaded"		"1465050400"
+	"BytesToStage"		"2906579830"
+	"BytesStaged"		"2906579830"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"1116581"
+		{
+			"manifest"		"7738142470578335933"
+			"size"		"2906579830"
+		}
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+		"platform_override_dest"		"linux"
+		"platform_override_source"		"windows"
+	}
+}

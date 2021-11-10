@@ -1,0 +1,34 @@
+"AppState"
+{
+	"appid"		"1397140"
+	"Universe"		"1"
+	"name"		"The Last Show of Mr. Chardish: Act I"
+	"StateFlags"		"4"
+	"installdir"		"The Act One of the Last Show of Mr. Chardish"
+	"LastUpdated"		"1621948360"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"2300433726"
+	"buildid"		"5777026"
+	"LastOwner"		"76561198043731689"
+	"BytesToDownload"		"2210734064"
+	"BytesDownloaded"		"2210734064"
+	"BytesToStage"		"2300433726"
+	"BytesStaged"		"2300433726"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"1397141"
+		{
+			"manifest"		"9098402566871436547"
+			"size"		"2300433726"
+		}
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+		"platform_override_dest"		"linux"
+		"platform_override_source"		"windows"
+	}
+}

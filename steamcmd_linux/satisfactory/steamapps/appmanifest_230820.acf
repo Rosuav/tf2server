@@ -1,0 +1,39 @@
+"AppState"
+{
+	"appid"		"230820"
+	"Universe"		"1"
+	"name"		"The Night of the Rabbit"
+	"StateFlags"		"4"
+	"installdir"		"The Night of the Rabbit"
+	"LastUpdated"		"1618408080"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"6281068660"
+	"buildid"		"136095"
+	"LastOwner"		"76561198043731689"
+	"BytesToDownload"		"0"
+	"BytesDownloaded"		"0"
+	"BytesToStage"		"0"
+	"BytesStaged"		"0"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"230822"
+		{
+			"manifest"		"1497377484494557003"
+			"size"		"21495601"
+		}
+		"230821"
+		{
+			"manifest"		"3381330861977111719"
+			"size"		"6259573059"
+		}
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+		"platform_override_dest"		"linux"
+		"platform_override_source"		"windows"
+	}
+}
