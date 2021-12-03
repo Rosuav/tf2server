@@ -5,15 +5,15 @@
 	"name"		"Satisfactory Dedicated Server"
 	"StateFlags"		"4"
 	"installdir"		"SatisfactoryDedicatedServer"
-	"LastUpdated"		"1636570684"
+	"LastUpdated"		"1638490577"
 	"UpdateResult"		"0"
-	"SizeOnDisk"		"4511260573"
-	"buildid"		"7689498"
-	"LastOwner"		"76561201499434137"
-	"BytesToDownload"		"1108264432"
-	"BytesDownloaded"		"1108264432"
-	"BytesToStage"		"4511260573"
-	"BytesStaged"		"4511260573"
+	"SizeOnDisk"		"4521410230"
+	"buildid"		"7815449"
+	"LastOwner"		"76561198660516045"
+	"BytesToDownload"		"516272528"
+	"BytesDownloaded"		"516272528"
+	"BytesToStage"		"4357833284"
+	"BytesStaged"		"4357833284"
 	"AutoUpdateBehavior"		"0"
 	"AllowOtherDownloadsWhileRunning"		"0"
 	"ScheduledAutoUpdate"		"0"
@@ -21,13 +21,13 @@
 	{
 		"1006"
 		{
-			"manifest"		"8623715305920777347"
-			"size"		"63297966"
+			"manifest"		"1145429015527304256"
+			"size"		"64668366"
 		}
 		"1690802"
 		{
-			"manifest"		"2013607339160967318"
-			"size"		"4447962607"
+			"manifest"		"196539870481983156"
+			"size"		"4456741864"
 		}
 	}
 	"UserConfig"
