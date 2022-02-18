@@ -30,6 +30,11 @@
 					"title"		"#Move"
 					"input_mode"		"joystick_move"
 				}
+				"TouchPadMove"
+				{
+					"title"		"#TouchPadMove"
+					"input_mode"		"joystick_move"
+				}
 				"GyroCamera"
 				{
 					"title"		"#GyroCamera"
@@ -80,6 +85,7 @@
 				"slot3"		"#CycleMeleeWeapon"
 				"slot4"		"#Grenade"
 				"slot5"		"#Bomb"
+				"slot12"		"#HealthShot"
 				"lookatweapon"		"#InspectWeapon"
 				"pause_menu"		"#PauseGame"
 				"showscores"		"#ToggleScores"
@@ -89,6 +95,9 @@
 				"vote_yes"		"#VoteYes"
 				"vote_no"		"#VoteNo"
 				"recalibrate_gyro"	"#RecalibrateGyro"
+				"sc_say"		"#Chat"
+				"sc_say_team"		"#TeamChat"
+
 			}
 		}
 		"MenuControls"
@@ -124,7 +133,6 @@
 				"menu_select"		"#MenuSelect"
 				"menu_x"		"#MenuX"
 				"menu_y"		"#MenuY"
-				"menu_start_match"		"#MenuStartMatch"
 				"pause_menu"		"#ReturnToGame"
 				"vote_yes"		"#VoteYes"
 				"vote_no"		"#VoteNo"
@@ -133,6 +141,23 @@
 	}
 	"action_layers"
 	{
+		"BuyZoneLayer"
+		{
+			"title"		"#BuyControls"
+			"legacy_set"		"0"
+			"set_layer"		"1"
+			"parent_set_name"		"GameControls"
+			"Button"
+			{
+				"quickbuyradial_pistols"		"#QuickBuyPistols"
+				"quickbuyradial_heavyweapons"		"#QuickBuyHeavyWeapons"
+				"quickbuyradial_rifles"		"#QuickBuyRifles"
+				"quickbuyradial_smgs"		"#QuickBuySMGs"
+				"quickbuyradial_gear"		"#QuickBuyGear"
+				"quickbuyradial_grenades"		"#QuickBuyGrenades"
+			}
+		}
+
 		"SpectatorControls"
 		{
 			"title"		"#SpectatorControls"
@@ -155,85 +180,24 @@
 				"use"		"#TakeControlOfBot"
 			}
 		}
-		"RadialLayer_SelectGrenades"
+		"DroneControlsLayer"
 		{
-			"title"		"#QuickGrenadeRadial"
+			"title"		"#DroneControls"
 			"legacy_set"		"0"
 			"set_layer"		"1"
 			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_SelectGear"
-		{
-			"title"		"#QuickGearRadial"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Comms"
-		{
-			"title"		"#RadioPing"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_InventoryRadial"
-		{
-			"title"		"#InventoryRadial"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"BuyZoneLayer"
-		{
-			"title"		"#BuyControls"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
+		
 			"Button"
 			{
-				"quickbuyradial_pistols"		"#QuickBuyPistols"
-				"quickbuyradial_heavyweapons"		"#QuickBuyHeavyWeapons"
-				"quickbuyradial_rifles"		"#QuickBuyRifles"
-				"quickbuyradial_smgs"		"#QuickBuySMGs"
-				"quickbuyradial_gear"		"#QuickBuyGear"
-				"quickbuyradial_grenades"		"#QuickBuyGrenades"
+				"attack"		"#CargoPickup"
+				"use"			"#LeaveControls"
+				"reload"		"#SelfDestruct"
 			}
 		}
-		"RadialLayer_Buy_gear"
+
+		"RadialLayer_LeftStick"
 		{
-			"title"		"#QuickBuyGear"
+			"title"		"#RadialLayer_LeftStick"
 			"legacy_set"		"0"
 			"set_layer"		"1"
 			"parent_set_name"		"GameControls"
@@ -246,69 +210,9 @@
 				}
 			}
 		}
-		"RadialLayer_Buy_grenades"
+		"RadialLayer_RightStick"
 		{
-			"title"		"#QuickBuyGrenades"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_pistols"
-		{
-			"title"		"#QuickBuyPistols"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_heavyweapons"
-		{
-			"title"		"#QuickBuyHeavyWeapons"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_rifles"
-		{
-			"title"		"#QuickBuyRifles"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_smgs"
-		{
-			"title"		"#QuickBuySMGs"
+			"title"		"#RadialLayer_RightStick"
 			"legacy_set"		"0"
 			"set_layer"		"1"
 			"parent_set_name"		"GameControls"
@@ -328,6 +232,7 @@
 		{
 			"InGame_Controls"		"In-Game Controls"
 			"Move"		"Move"
+			"TouchPadMove"			"TouchPad Move"
 			"GyroCamera"	"GyroCamera"
 			"Camera"		"Camera"
 			"TouchPadCamera"		"TouchPad Camera"
@@ -365,8 +270,7 @@
 			"MenuSelect"		"Select"
 			"MenuCancel"		"Cancel"
 			"MenuX"		"Alt Select"
-			"MenuY"		"Options"
-			"MenuStartMatch"		"Start Match"
+			"MenuY"		"Options"			
 			"ReturnToGame"		"Return to Game"
 			"Navigate"		"Navigate"
 			"Mouse"		"Mouse Cursor"
@@ -376,6 +280,8 @@
 			"MenuControls"		"Menu Controls"
 			"BuyControls"		"Buy Zone Controls"
 			"SpectatorControls"		"Spectator Controls"
+			"RadialLayer_RightStick" "Radial Overlay"
+			"RadialLayer_LeftStick" "Radial Overlay (Using Left Stick)"
 			"RadialSelectionDirection"		"Radial Selection"
 			"Spin180"		"Spin 180"
 			"UseOrReload"		"Use or Reload"
@@ -406,6 +312,14 @@
 			"SpectatorModeMoveUp"		"Fly Up"
 			"SpectatorModeMoveDown"		"Fly Down"
 			"TakeControlOfBot"		"Control Bot"
+			"Chat"					"Open Chat Window"
+			"TeamChat"				"Open Team - Chat Window"
+			"HealthShot"			"Health Shot"
+			"DroneControls"			"Drone Controls"
+			"CargoPickup"			"Drone: Grab/Drop Cargo"
+			"LeaveControls"			"Drone: Leave Controls"
+			"SelfDestruct"			"Drone: Self Destruct"
+			
 		}
 		"brazilian"
 		{

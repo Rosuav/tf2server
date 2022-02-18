@@ -6,10 +6,10 @@
 	"description"		""
 	"creator"		"-1"
 	"controller_type"		"controller_ps4"
-	"major_revision"		"0"
+	"major_revision"		"2"
 	"minor_revision"		"0"
 	"Timestamp"		"0"
-		"actions"
+	"actions"
 	{
 		"GameControls"
 		{
@@ -20,6 +20,11 @@
 				"Move"
 				{
 					"title"		"#Move"
+					"input_mode"		"joystick_move"
+				}
+				"TouchPadMove"
+				{
+					"title"		"#TouchPadMove"
 					"input_mode"		"joystick_move"
 				}
 				"GyroCamera"
@@ -38,7 +43,7 @@
 					"input_mode"		"joystick_move"
 				}
 			}
-			"Button" 
+			"Button"
 			{
 				"attack"		"#Fire"
 				"scope"		"#AimDownSights"
@@ -72,6 +77,7 @@
 				"slot3"		"#CycleMeleeWeapon"
 				"slot4"		"#Grenade"
 				"slot5"		"#Bomb"
+				"slot12"		"#HealthShot"
 				"lookatweapon"		"#InspectWeapon"
 				"pause_menu"		"#PauseGame"
 				"showscores"		"#ToggleScores"
@@ -81,6 +87,8 @@
 				"vote_yes"		"#VoteYes"
 				"vote_no"		"#VoteNo"
 				"recalibrate_gyro"		"#RecalibrateGyro"
+				"sc_say"		"#Chat"
+				"sc_say_team"		"#TeamChat"
 			}
 		}
 		"MenuControls"
@@ -115,7 +123,6 @@
 				"menu_select"		"#MenuSelect"
 				"menu_x"		"#MenuX"
 				"menu_y"		"#MenuY"
-				"menu_start_match"		"#MenuStartMatch"
 				"pause_menu"		"#ReturnToGame"
 				"vote_yes"		"#VoteYes"
 				"vote_no"		"#VoteNo"
@@ -124,6 +131,22 @@
 	}
 	"action_layers"
 	{
+		"BuyZoneLayer"
+		{
+			"title"		"#BuyControls"
+			"legacy_set"		"0"
+			"set_layer"		"1"
+			"parent_set_name"		"GameControls"
+			"Button"
+			{
+				"quickbuyradial_pistols"		"#QuickBuyPistols"
+				"quickbuyradial_heavyweapons"		"#QuickBuyHeavyWeapons"
+				"quickbuyradial_rifles"		"#QuickBuyRifles"
+				"quickbuyradial_smgs"		"#QuickBuySMGs"
+				"quickbuyradial_gear"		"#QuickBuyGear"
+				"quickbuyradial_grenades"		"#QuickBuyGrenades"
+			}
+		}
 		"SpectatorControls"
 		{
 			"title"		"#SpectatorControls"
@@ -146,85 +169,22 @@
 				"use"		"#TakeControlOfBot"
 			}
 		}
-		"RadialLayer_SelectGrenades"
+		"DroneControlsLayer"
 		{
-			"title"		"#QuickGrenadeRadial"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_SelectGear"
-		{
-			"title"		"#QuickGearRadial"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Comms"
-		{
-			"title"		"#RadioPing"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_InventoryRadial"
-		{
-			"title"		"#InventoryRadial"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"BuyZoneLayer"
-		{
-			"title"		"#BuyControls"
+			"title"		"#DroneControls"
 			"legacy_set"		"0"
 			"set_layer"		"1"
 			"parent_set_name"		"GameControls"
 			"Button"
 			{
-				"quickbuyradial_pistols"		"#QuickBuyPistols"
-				"quickbuyradial_heavyweapons"		"#QuickBuyHeavyWeapons"
-				"quickbuyradial_rifles"		"#QuickBuyRifles"
-				"quickbuyradial_smgs"		"#QuickBuySMGs"
-				"quickbuyradial_gear"		"#QuickBuyGear"
-				"quickbuyradial_grenades"		"#QuickBuyGrenades"
+				"attack"		"#CargoPickup"
+				"use"		"#LeaveControls"
+				"reload"		"#SelfDestruct"
 			}
 		}
-		"RadialLayer_Buy_gear"
+		"RadialLayer_LeftStick"
 		{
-			"title"		"#QuickBuyGear"
+			"title"		"#RadialLayer_LeftStick"
 			"legacy_set"		"0"
 			"set_layer"		"1"
 			"parent_set_name"		"GameControls"
@@ -237,69 +197,9 @@
 				}
 			}
 		}
-		"RadialLayer_Buy_grenades"
+		"RadialLayer_RightStick"
 		{
-			"title"		"#QuickBuyGrenades"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_pistols"
-		{
-			"title"		"#QuickBuyPistols"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_heavyweapons"
-		{
-			"title"		"#QuickBuyHeavyWeapons"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_rifles"
-		{
-			"title"		"#QuickBuyRifles"
-			"legacy_set"		"0"
-			"set_layer"		"1"
-			"parent_set_name"		"GameControls"
-			"StickPadGyro"
-			{
-				"RadialSelectionDirection"
-				{
-					"title"		"#RadialSelectionStick"
-					"input_mode"		"joystick_move"
-				}
-			}
-		}
-		"RadialLayer_Buy_smgs"
-		{
-			"title"		"#QuickBuySMGs"
+			"title"		"#RadialLayer_RightStick"
 			"legacy_set"		"0"
 			"set_layer"		"1"
 			"parent_set_name"		"GameControls"
@@ -319,6 +219,7 @@
 		{
 			"InGame_Controls"		"In-Game Controls"
 			"Move"		"Move"
+			"TouchPadMove"		"TouchPad Move"
 			"GyroCamera"		"GyroCamera"
 			"Camera"		"Camera"
 			"TouchPadCamera"		"TouchPad Camera"
@@ -367,6 +268,8 @@
 			"MenuControls"		"Menu Controls"
 			"BuyControls"		"Buy Zone Controls"
 			"SpectatorControls"		"Spectator Controls"
+			"RadialLayer_RightStick"		"Radial Overlay"
+			"RadialLayer_LeftStick"		"Radial Overlay (Using Left Stick)"
 			"RadialSelectionDirection"		"Radial Selection"
 			"Spin180"		"Spin 180"
 			"UseOrReload"		"Use or Reload"
@@ -397,6 +300,13 @@
 			"SpectatorModeMoveUp"		"Fly Up"
 			"SpectatorModeMoveDown"		"Fly Down"
 			"TakeControlOfBot"		"Control Bot"
+			"Chat"		"Open Chat Window"
+			"TeamChat"		"Open Team - Chat Window"
+			"HealthShot"		"Health Shot"
+			"DroneControls"		"Drone Controls"
+			"CargoPickup"		"Drone: Grab/Drop Cargo"
+			"LeaveControls"		"Drone: Leave Controls"
+			"SelfDestruct"		"Drone: Self Destruct"
 		}
 		"brazilian"
 		{
@@ -1934,7 +1844,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls radialradio2"
+							"binding"		"game_action GameControls scopetoggle"
 						}
 					}
 				}
@@ -2409,70 +2319,6 @@
 		"description"		""
 		"inputs"
 		{
-			"button_a"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action BuyZoneLayer quickbuyradial_smgs"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_b"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action BuyZoneLayer quickbuyradial_heavyweapons"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_x"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action BuyZoneLayer quickbuyradial_pistols"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_y"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action BuyZoneLayer quickbuyradial_rifles"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
 		}
 		"settings"
 		{
@@ -2520,7 +2366,23 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action BuyZoneLayer quickbuyradial_gear"
+							"binding"		"game_action BuyZoneLayer quickbuyradial_heavyweapons"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_south"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action BuyZoneLayer quickbuyradial_rifles"
 						}
 					}
 				}
@@ -2536,7 +2398,23 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action BuyZoneLayer quickbuyradial_grenades"
+							"binding"		"game_action BuyZoneLayer quickbuyradial_smgs"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_west"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action BuyZoneLayer quickbuyradial_pistols"
 						}
 					}
 				}
@@ -3042,10 +2920,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_heavyweapons"		"GameControls JoystickCamera"
-		}
 	}
 	"group"
 	{
@@ -3180,10 +3054,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_grenades"		"GameControls Move"
-		}
 	}
 	"group"
 	{
@@ -3249,10 +3119,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_pistols"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -3265,10 +3131,6 @@
 		"settings"
 		{
 			"layer"		"1"
-		}
-		"gameactions"
-		{
-			"RadialLayer_SelectGrenades"		"RadialSelectionDirection"
 		}
 	}
 	"group"
@@ -3294,7 +3156,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3310,10 +3171,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_InventoryRadial"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -3325,7 +3182,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3339,7 +3195,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3353,7 +3208,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3367,7 +3221,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3381,7 +3234,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3407,10 +3259,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_pistols"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -3423,10 +3271,6 @@
 		"settings"
 		{
 			"layer"		"1"
-		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_heavyweapons"		"RadialSelectionDirection"
 		}
 	}
 	"group"
@@ -3441,10 +3285,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_rifles"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -3458,10 +3298,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_smgs"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -3473,7 +3309,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3487,7 +3322,6 @@
 		}
 		"settings"
 		{
-			"virtual_mode"		"0"
 			"layer"		"1"
 		}
 	}
@@ -3503,10 +3337,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_gear"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -3519,10 +3349,6 @@
 		"settings"
 		{
 			"layer"		"1"
-		}
-		"gameactions"
-		{
-			"RadialLayer_Buy_grenades"		"RadialSelectionDirection"
 		}
 	}
 	"group"
@@ -3722,7 +3548,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls sprint"
+							"binding"		"game_action GameControls quickinv"
 						}
 					}
 				}
@@ -3979,10 +3805,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Comms"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -4205,10 +4027,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_InventoryRadial"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -4258,10 +4076,6 @@
 		{
 			"layer"		"1"
 		}
-		"gameactions"
-		{
-			"RadialLayer_Comms"		"RadialSelectionDirection"
-		}
 	}
 	"group"
 	{
@@ -4270,6 +4084,339 @@
 		"description"		""
 		"inputs"
 		{
+		}
+	}
+	"group"
+	{
+		"id"		"171"
+		"mode"		"four_buttons"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"172"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"173"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"174"
+		"mode"		"joystick_move"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls quickinv"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"175"
+		"mode"		"joystick_move"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls quickinv"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+		}
+		"gameactions"
+		{
+			"GameControls"		"TouchPadMove"
+		}
+	}
+	"group"
+	{
+		"id"		"177"
+		"mode"		"four_buttons"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"178"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"179"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"181"
+		"mode"		"four_buttons"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"182"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"183"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"184"
+		"mode"		"joystick_move"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"RadialLayer_RightStick"		"RadialSelectionDirection"
+		}
+	}
+	"group"
+	{
+		"id"		"185"
+		"mode"		"joystick_move"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"RadialLayer_LeftStick"		"RadialSelectionDirection"
+		}
+	}
+	"group"
+	{
+		"id"		"187"
+		"mode"		"four_buttons"
+		"description"		""
+		"inputs"
+		{
+			"button_b"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action DroneControlsLayer use"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_x"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action DroneControlsLayer reload"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"188"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"189"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action DroneControlsLayer attack"
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"190"
+		"mode"		"single_button"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls autobuy"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
 		}
 	}
 	"group"
@@ -4319,7 +4466,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls scopetoggle"
+							"binding"		"game_action GameControls quickgrenaderadial"
 						}
 					}
 				}
@@ -4335,7 +4482,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls quickgrenaderadial"
+							"binding"		"game_action GameControls radialradio2"
 						}
 					}
 				}
@@ -4392,7 +4539,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action MenuControls menu_start_match"
+							"binding"		"game_action MenuControls pause_menu"
 						}
 					}
 				}
@@ -4447,6 +4594,54 @@
 		"description"		""
 		"inputs"
 		{
+			"button_menu"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls autobuy"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"left_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action BuyZoneLayer quickbuyradial_grenades"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"right_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action BuyZoneLayer quickbuyradial_gear"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 			"button_capture"
 			{
 				"activators"
@@ -4829,6 +5024,106 @@
 			"layer"		"1"
 		}
 	}
+	"group"
+	{
+		"id"		"170"
+		"mode"		"switches"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"176"
+		"mode"		"switches"
+		"description"		""
+		"inputs"
+		{
+			"button_capture"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action SCREENSHOT"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"180"
+		"mode"		"switches"
+		"description"		""
+		"inputs"
+		{
+			"button_capture"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action SCREENSHOT"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"186"
+		"mode"		"switches"
+		"description"		""
+		"inputs"
+		{
+			"button_capture"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action SCREENSHOT"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
 	"preset"
 	{
 		"id"		"0"
@@ -4856,7 +5151,8 @@
 			"36"		"center_trackpad inactive"
 			"139"		"left_trackpad inactive"
 			"140"		"left_trackpad inactive"
-			"141"		"left_trackpad active"
+			"141"		"left_trackpad inactive"
+			"175"		"left_trackpad active"
 		}
 	}
 	"preset"
@@ -4891,6 +5187,23 @@
 	"preset"
 	{
 		"id"		"2"
+		"name"		"BuyZoneLayer"
+		"group_source_bindings"
+		{
+			"45"		"switch active"
+			"46"		"button_diamond active"
+			"47"		"left_trigger active"
+			"48"		"right_trigger active"
+			"49"		"dpad active"
+			"94"		"right_joystick inactive"
+			"95"		"right_joystick inactive"
+			"96"		"right_joystick inactive"
+			"190"		"left_trackpad active"
+		}
+	}
+	"preset"
+	{
+		"id"		"3"
 		"name"		"SpectatorControls"
 		"group_source_bindings"
 		{
@@ -4913,165 +5226,40 @@
 	}
 	"preset"
 	{
-		"id"		"3"
-		"name"		"RadialLayer_SelectGrenades"
-		"group_source_bindings"
-		{
-			"55"		"switch active"
-			"56"		"button_diamond active"
-			"57"		"left_trigger active"
-			"58"		"right_trigger active"
-			"91"		"right_joystick inactive"
-			"116"		"right_joystick active"
-		}
-	}
-	"preset"
-	{
 		"id"		"4"
-		"name"		"RadialLayer_Comms"
+		"name"		"DroneControlsLayer"
 		"group_source_bindings"
 		{
-			"110"		"switch active"
-			"111"		"button_diamond active"
-			"112"		"left_trigger active"
-			"113"		"right_trigger active"
-			"152"		"joystick inactive"
-			"167"		"joystick inactive"
-			"114"		"right_joystick inactive"
-			"118"		"right_joystick inactive"
-			"168"		"right_joystick active"
+			"186"		"switch active"
+			"187"		"button_diamond active"
+			"188"		"left_trigger active"
+			"189"		"right_trigger active"
 		}
 	}
 	"preset"
 	{
 		"id"		"5"
-		"name"		"RadialLayer_InventoryRadial"
+		"name"		"RadialLayer_LeftStick"
 		"group_source_bindings"
 		{
-			"63"		"switch active"
-			"64"		"button_diamond active"
-			"65"		"left_trigger active"
-			"66"		"right_trigger active"
-			"165"		"joystick active"
-			"93"		"right_joystick inactive"
-			"119"		"right_joystick inactive"
-			"166"		"right_joystick inactive"
+			"176"		"switch active"
+			"177"		"button_diamond active"
+			"178"		"left_trigger active"
+			"179"		"right_trigger active"
+			"185"		"joystick active"
 		}
 	}
 	"preset"
 	{
 		"id"		"6"
-		"name"		"BuyZoneLayer"
+		"name"		"RadialLayer_RightStick"
 		"group_source_bindings"
 		{
-			"45"		"switch active"
-			"46"		"button_diamond active"
-			"47"		"left_trigger active"
-			"48"		"right_trigger active"
-			"49"		"dpad active"
-			"94"		"right_joystick inactive"
-			"95"		"right_joystick inactive"
-			"96"		"right_joystick inactive"
-		}
-	}
-	"preset"
-	{
-		"id"		"7"
-		"name"		"RadialLayer_Buy_gear"
-		"group_source_bindings"
-		{
-			"83"		"switch active"
-			"84"		"button_diamond active"
-			"85"		"left_trigger active"
-			"86"		"right_trigger active"
-			"102"		"joystick inactive"
-			"106"		"joystick inactive"
-			"130"		"joystick inactive"
-			"107"		"right_joystick inactive"
-			"123"		"right_joystick inactive"
-			"132"		"right_joystick active"
-		}
-	}
-	"preset"
-	{
-		"id"		"8"
-		"name"		"RadialLayer_Buy_grenades"
-		"group_source_bindings"
-		{
-			"87"		"switch active"
-			"88"		"button_diamond active"
-			"89"		"left_trigger active"
-			"90"		"right_trigger active"
-			"103"		"joystick inactive"
-			"104"		"joystick inactive"
-			"109"		"joystick inactive"
-			"131"		"joystick inactive"
-			"105"		"right_joystick inactive"
-			"124"		"right_joystick inactive"
-			"133"		"right_joystick active"
-		}
-	}
-	"preset"
-	{
-		"id"		"9"
-		"name"		"RadialLayer_Buy_pistols"
-		"group_source_bindings"
-		{
-			"67"		"switch active"
-			"68"		"button_diamond active"
-			"69"		"left_trigger active"
-			"70"		"right_trigger active"
-			"97"		"joystick inactive"
-			"126"		"joystick active"
-			"115"		"right_joystick inactive"
-			"125"		"right_joystick inactive"
-		}
-	}
-	"preset"
-	{
-		"id"		"10"
-		"name"		"RadialLayer_Buy_heavyweapons"
-		"group_source_bindings"
-		{
-			"71"		"switch active"
-			"72"		"button_diamond active"
-			"73"		"left_trigger active"
-			"74"		"right_trigger active"
-			"98"		"joystick inactive"
-			"99"		"joystick inactive"
-			"127"		"joystick active"
-			"120"		"right_joystick inactive"
-		}
-	}
-	"preset"
-	{
-		"id"		"11"
-		"name"		"RadialLayer_Buy_rifles"
-		"group_source_bindings"
-		{
-			"75"		"switch active"
-			"76"		"button_diamond active"
-			"77"		"left_trigger active"
-			"78"		"right_trigger active"
-			"100"		"joystick inactive"
-			"128"		"joystick active"
-			"121"		"right_joystick inactive"
-		}
-	}
-	"preset"
-	{
-		"id"		"12"
-		"name"		"RadialLayer_Buy_smgs"
-		"group_source_bindings"
-		{
-			"79"		"switch active"
-			"80"		"button_diamond active"
-			"81"		"left_trigger active"
-			"82"		"right_trigger active"
-			"101"		"joystick inactive"
-			"129"		"joystick active"
-			"108"		"right_joystick inactive"
-			"122"		"right_joystick inactive"
+			"180"		"switch active"
+			"181"		"button_diamond active"
+			"182"		"left_trigger active"
+			"183"		"right_trigger active"
+			"184"		"right_joystick active"
 		}
 	}
 	"settings"
