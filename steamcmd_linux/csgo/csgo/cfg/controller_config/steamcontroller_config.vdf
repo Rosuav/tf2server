@@ -2,10 +2,10 @@
 {
 	"version"		"3"
 	"revision"		"383"
-	"title"		"SteamDeck Official Controls"
+	"title"		"Steam Controller Official Controls"
 	"description"		""
 	"creator"		"-1"
-	"controller_type"		"controller_neptune"
+	"controller_type"		"controller_steamcontroller_gordon"
 	"major_revision"		"6"
 	"minor_revision"		"0"
 	"actions"
@@ -321,7 +321,6 @@
 	{
 		"id"		"0"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -395,7 +394,6 @@
 	{
 		"id"		"1"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -444,7 +442,7 @@
 		{
 			"deadzone_outer_radius"		"32767"
 			"deadzone_inner_radius"		"0"
-			"edge_binding_radius"		"1006"
+			"edge_binding_radius"		"907"
 			"adaptive_threshold"		"0"
 		}
 	}
@@ -452,7 +450,6 @@
 	{
 		"id"		"2"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -488,7 +485,6 @@
 	{
 		"id"		"3"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -530,7 +526,6 @@
 	{
 		"id"		"4"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -540,7 +535,6 @@
 	{
 		"id"		"5"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -550,7 +544,6 @@
 	{
 		"id"		"6"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -565,7 +558,6 @@
 	{
 		"id"		"7"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -580,7 +572,6 @@
 	{
 		"id"		"8"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -620,7 +611,6 @@
 	{
 		"id"		"9"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -634,7 +624,6 @@
 	{
 		"id"		"10"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -649,7 +638,6 @@
 	{
 		"id"		"12"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -659,7 +647,6 @@
 	{
 		"id"		"20"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -745,7 +732,6 @@
 	{
 		"id"		"21"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -824,7 +810,6 @@
 	{
 		"id"		"22"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -839,7 +824,6 @@
 	{
 		"id"		"24"
 		"mode"		"joystick_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -859,7 +843,6 @@
 	{
 		"id"		"25"
 		"mode"		"joystick_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -879,7 +862,6 @@
 	{
 		"id"		"27"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -916,7 +898,6 @@
 	{
 		"id"		"28"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -926,7 +907,6 @@
 	{
 		"id"		"29"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -940,7 +920,6 @@
 	{
 		"id"		"30"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -950,7 +929,6 @@
 	{
 		"id"		"31"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -960,7 +938,6 @@
 	{
 		"id"		"32"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -970,7 +947,6 @@
 	{
 		"id"		"33"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -985,7 +961,6 @@
 	{
 		"id"		"34"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1003,7 +978,6 @@
 	{
 		"id"		"35"
 		"mode"		"joystick_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1018,7 +992,6 @@
 	{
 		"id"		"36"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1028,7 +1001,6 @@
 	{
 		"id"		"41"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1047,7 +1019,6 @@
 	{
 		"id"		"42"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1066,7 +1037,6 @@
 	{
 		"id"		"46"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1107,7 +1077,6 @@
 	{
 		"id"		"47"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1121,7 +1090,6 @@
 	{
 		"id"		"48"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1135,7 +1103,6 @@
 	{
 		"id"		"49"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1149,7 +1116,6 @@
 	{
 		"id"		"94"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1161,9 +1127,18 @@
 	}
 	"group"
 	{
+		"id"		"95"
+		"mode"		"disabled"
+		"description"		""
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
 		"id"		"96"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1177,7 +1152,6 @@
 	{
 		"id"		"135"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1255,7 +1229,6 @@
 	{
 		"id"		"136"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1285,7 +1258,6 @@
 	{
 		"id"		"137"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1299,7 +1271,6 @@
 	{
 		"id"		"138"
 		"mode"		"single_button"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1307,7 +1278,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -1325,7 +1296,6 @@
 	{
 		"id"		"139"
 		"mode"		"single_button"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1333,7 +1303,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -1351,7 +1321,6 @@
 	{
 		"id"		"140"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1365,7 +1334,6 @@
 	{
 		"id"		"141"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1373,7 +1341,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -1399,7 +1367,6 @@
 	{
 		"id"		"142"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1414,7 +1381,6 @@
 	{
 		"id"		"143"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1424,7 +1390,6 @@
 	{
 		"id"		"144"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1503,7 +1468,6 @@
 	{
 		"id"		"145"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1535,7 +1499,6 @@
 	{
 		"id"		"146"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1555,7 +1518,6 @@
 	{
 		"id"		"147"
 		"mode"		"flickstick"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1573,7 +1535,6 @@
 	{
 		"id"		"148"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1609,7 +1570,6 @@
 	{
 		"id"		"149"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1623,7 +1583,6 @@
 	{
 		"id"		"150"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1637,7 +1596,6 @@
 	{
 		"id"		"151"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1651,7 +1609,6 @@
 	{
 		"id"		"153"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1665,7 +1622,6 @@
 	{
 		"id"		"154"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1679,7 +1635,6 @@
 	{
 		"id"		"155"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1693,7 +1648,6 @@
 	{
 		"id"		"156"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1705,9 +1659,18 @@
 	}
 	"group"
 	{
+		"id"		"157"
+		"mode"		"disabled"
+		"description"		""
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
 		"id"		"158"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1727,7 +1690,6 @@
 	{
 		"id"		"159"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1748,7 +1710,6 @@
 	{
 		"id"		"160"
 		"mode"		"dpad"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1762,7 +1723,6 @@
 	{
 		"id"		"161"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1796,7 +1756,6 @@
 	{
 		"id"		"162"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1804,7 +1763,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -1813,13 +1772,6 @@
 						"settings"
 						{
 							"haptic_intensity"		"1"
-						}
-					}
-					"Soft_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action GameControls gyrosuppress"
 						}
 					}
 				}
@@ -1831,6 +1783,7 @@
 		"settings"
 		{
 			"virtual_mode"		"1"
+			"sensitivity"		"341"
 		}
 		"gameactions"
 		{
@@ -1841,7 +1794,6 @@
 	{
 		"id"		"163"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1861,7 +1813,6 @@
 	{
 		"id"		"164"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1899,7 +1850,6 @@
 	{
 		"id"		"168"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1929,7 +1879,6 @@
 	{
 		"id"		"169"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1939,7 +1888,6 @@
 	{
 		"id"		"174"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1969,7 +1917,6 @@
 	{
 		"id"		"175"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -1977,7 +1924,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -2003,7 +1950,6 @@
 	{
 		"id"		"177"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2017,7 +1963,6 @@
 	{
 		"id"		"178"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2031,7 +1976,6 @@
 	{
 		"id"		"179"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2045,7 +1989,6 @@
 	{
 		"id"		"181"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2059,7 +2002,6 @@
 	{
 		"id"		"182"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2073,7 +2015,6 @@
 	{
 		"id"		"183"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2087,13 +2028,13 @@
 	{
 		"id"		"184"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
 		}
 		"settings"
 		{
+			"virtual_mode"		"1"
 			"layer"		"1"
 		}
 		"gameactions"
@@ -2105,7 +2046,6 @@
 	{
 		"id"		"185"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2123,7 +2063,6 @@
 	{
 		"id"		"187"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2169,7 +2108,6 @@
 	{
 		"id"		"188"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2183,7 +2121,6 @@
 	{
 		"id"		"189"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2217,7 +2154,6 @@
 	{
 		"id"		"190"
 		"mode"		"single_button"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2231,7 +2167,6 @@
 	{
 		"id"		"192"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2245,7 +2180,6 @@
 	{
 		"id"		"193"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2275,7 +2209,6 @@
 	{
 		"id"		"194"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2303,9 +2236,18 @@
 	}
 	"group"
 	{
+		"id"		"195"
+		"mode"		"disabled"
+		"description"		""
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
 		"id"		"197"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2351,7 +2293,6 @@
 	{
 		"id"		"198"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2365,7 +2306,6 @@
 	{
 		"id"		"199"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2379,7 +2319,6 @@
 	{
 		"id"		"201"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2441,7 +2380,6 @@
 	{
 		"id"		"202"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2455,7 +2393,6 @@
 	{
 		"id"		"203"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2469,7 +2406,40 @@
 	{
 		"id"		"204"
 		"mode"		"joystick_move"
-		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action TabletBuyMenuControlsLayer menu_select"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"TabletBuyMenuControlsLayer"		"MouseCursor"
+		}
+	}
+	"group"
+	{
+		"id"		"205"
+		"mode"		"absolute_mouse"
 		"description"		""
 		"inputs"
 		{
@@ -2496,40 +2466,6 @@
 		}
 		"gameactions"
 		{
-			"TabletBuyMenuControlsLayer"		"MouseCursor"
-		}
-	}
-	"group"
-	{
-		"id"		"205"
-		"mode"		"absolute_mouse"
-		"name"		""
-		"description"		""
-		"inputs"
-		{
-			"click"
-			{
-				"activators"
-				{
-					"Soft_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action TabletBuyMenuControlsLayer menu_select"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-		}
-		"settings"
-		{
-			"layer"		"1"
-		}
-		"gameactions"
-		{
 			"TabletBuyMenuControlsLayer"		"TouchPadMouseCursor"
 		}
 	}
@@ -2537,7 +2473,6 @@
 	{
 		"id"		"206"
 		"mode"		"single_button"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2545,7 +2480,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -2567,7 +2502,6 @@
 	{
 		"id"		"208"
 		"mode"		"four_buttons"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2613,7 +2547,6 @@
 	{
 		"id"		"209"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2627,7 +2560,6 @@
 	{
 		"id"		"210"
 		"mode"		"trigger"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2641,13 +2573,13 @@
 	{
 		"id"		"211"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
 		}
 		"settings"
 		{
+			"virtual_mode"		"1"
 			"layer"		"1"
 		}
 		"gameactions"
@@ -2659,7 +2591,6 @@
 	{
 		"id"		"212"
 		"mode"		"single_button"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2667,7 +2598,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -2689,7 +2620,6 @@
 	{
 		"id"		"213"
 		"mode"		"absolute_mouse"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2709,7 +2639,6 @@
 	{
 		"id"		"214"
 		"mode"		"joystick_move"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2717,7 +2646,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -2732,6 +2661,7 @@
 		}
 		"settings"
 		{
+			"virtual_mode"		"1"
 			"layer"		"1"
 		}
 		"gameactions"
@@ -2741,23 +2671,165 @@
 	}
 	"group"
 	{
-		"id"		"216"
-		"mode"		"four_buttons"
-		"name"		""
+		"id"		"215"
+		"mode"		"dpad"
 		"description"		""
 		"inputs"
 		{
+			"dpad_north"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls radialradio2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_south"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls drop"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_east"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls toggle_speed"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_west"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls firingmodetoggle"
+						}
+					}
+					"Long_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls lookatweapon"
+						}
+						"settings"
+						{
+							"haptic_intensity"		"0"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 		}
-		"settings"
+	}
+	"group"
+	{
+		"id"		"216"
+		"mode"		"dpad"
+		"description"		""
+		"inputs"
 		{
-			"layer"		"1"
+			"dpad_north"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_up"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_south"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_down"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_east"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_right"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_west"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_left"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 		}
 	}
 	"group"
 	{
 		"id"		"217"
-		"mode"		"trigger"
-		"name"		""
+		"mode"		"dpad"
 		"description"		""
 		"inputs"
 		{
@@ -2770,22 +2842,48 @@
 	"group"
 	{
 		"id"		"218"
-		"mode"		"trigger"
-		"name"		""
+		"mode"		"mouse_joystick"
 		"description"		""
 		"inputs"
 		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls recalibrate_gyro"
+							"binding"		"game_action GameControls gyrosuppress"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 		}
 		"settings"
 		{
-			"layer"		"1"
+			"virtual_mode"		"1"
+			"friction_vert_scale"		"98"
+			"sensitivity_vert_scale"		"73"
+			"mousejoystick_deadzone_x"		"0"
+			"mousejoystick_deadzone_y"		"0"
+			"mousejoystick_precision"		"77"
+			"custom_curve_exponent"		"160"
+			"deadzone_outer_radius"		"32000"
+		}
+		"gameactions"
+		{
+			"GameControls"		"JoystickCamera"
 		}
 	}
 	"group"
 	{
 		"id"		"219"
-		"mode"		"single_button"
-		"name"		""
+		"mode"		"mouse_joystick"
 		"description"		""
 		"inputs"
 		{
@@ -2793,11 +2891,15 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls jpeg"
+							"binding"		"mouse_button RIGHT"
+						}
+						"settings"
+						{
+							"haptic_intensity"		"1"
 						}
 					}
 				}
@@ -2805,6 +2907,138 @@
 				{
 				}
 			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+		}
+		"gameactions"
+		{
+			"MenuControls"		"Scroll"
+		}
+	}
+	"group"
+	{
+		"id"		"220"
+		"mode"		"mouse_joystick"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action TabletBuyMenuControlsLayer menu_select"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"TabletBuyMenuControlsLayer"		"MouseCursor"
+		}
+	}
+	"group"
+	{
+		"id"		"221"
+		"mode"		"mouse_joystick"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"ScoreBoardLayer"		"MouseCursor"
+		}
+	}
+	"group"
+	{
+		"id"		"222"
+		"mode"		"mouse_joystick"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"RadialLayer_RightStick"		"RadialSelectionDirection"
+		}
+	}
+	"group"
+	{
+		"id"		"223"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"224"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"225"
+		"mode"		"four_buttons"
+		"description"		""
+		"inputs"
+		{
+		}
+	}
+	"group"
+	{
+		"id"		"226"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"227"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"228"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"229"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"231"
+		"mode"		"four_buttons"
+		"description"		""
+		"inputs"
+		{
 		}
 		"settings"
 		{
@@ -2813,9 +3047,52 @@
 	}
 	"group"
 	{
-		"id"		"220"
-		"mode"		"absolute_mouse"
-		"name"		""
+		"id"		"232"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"233"
+		"mode"		"trigger"
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"234"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"235"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"236"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"237"
+		"mode"		"joystick_move"
 		"description"		""
 		"inputs"
 		{
@@ -2823,7 +3100,7 @@
 			{
 				"activators"
 				{
-					"Soft_Press"
+					"Full_Press"
 					{
 						"bindings"
 						{
@@ -2839,7 +3116,125 @@
 		"settings"
 		{
 			"virtual_mode"		"1"
-			"sensitivity"		"400"
+		}
+		"gameactions"
+		{
+			"MenuControls"		"MouseCursor"
+		}
+	}
+	"group"
+	{
+		"id"		"238"
+		"mode"		"joystick_move"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls recalibrate_gyro"
+							"binding"		"game_action GameControls gyrosuppress"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+		}
+		"gameactions"
+		{
+			"GameControls"		"TouchPadMove"
+		}
+	}
+	"group"
+	{
+		"id"		"239"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"240"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"241"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"242"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"243"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"244"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"245"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"246"
+		"mode"		"disabled"
+		"description"		""
+	}
+	"group"
+	{
+		"id"		"247"
+		"mode"		"absolute_mouse"
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"mouse_button LEFT"
+						}
+						"settings"
+						{
+							"haptic_intensity"		"1"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
 		}
 		"gameactions"
 		{
@@ -2848,44 +3243,14 @@
 	}
 	"group"
 	{
-		"id"		"221"
-		"mode"		"absolute_mouse"
-		"name"		""
+		"id"		"248"
+		"mode"		"disabled"
 		"description"		""
-		"inputs"
-		{
-			"click"
-			{
-				"activators"
-				{
-					"Soft_Press"
-					{
-						"bindings"
-						{
-							"binding"		"mouse_button LEFT"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-		}
-		"settings"
-		{
-			"virtual_mode"		"1"
-			"sensitivity"		"400"
-		}
-		"gameactions"
-		{
-			"MenuControls"		"TouchPadMouseCursor"
-		}
 	}
 	"group"
 	{
 		"id"		"17"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -2961,7 +3326,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls use_or_reload"
+							"binding"		"game_action GameControls duck_notoggle"
 						}
 					}
 				}
@@ -2985,47 +3350,15 @@
 				{
 				}
 			}
-			"button_back_left_upper"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action GameControls invnextgun"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_back_right_upper"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action GameControls toggle_duck"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
 			"button_capture"
 			{
 				"activators"
 				{
-					"release"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3039,7 +3372,6 @@
 	{
 		"id"		"18"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3052,22 +3384,6 @@
 						"bindings"
 						{
 							"binding"		"game_action MenuControls pause_menu"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_menu"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"mouse_button LEFT"
 						}
 					}
 				}
@@ -3091,7 +3407,7 @@
 				{
 				}
 			}
-			"button_back_right_upper"
+			"button_capture"
 			{
 				"activators"
 				{
@@ -3099,23 +3415,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action MenuControls menu_cancel"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_capture"
-			{
-				"activators"
-				{
-					"release"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3129,11 +3429,10 @@
 	{
 		"id"		"45"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
-			"button_back_left"
+			"button_menu"
 			{
 				"activators"
 				{
@@ -3141,7 +3440,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action GameControls use_or_reload"
+							"binding"		"game_action GameControls autobuy"
 						}
 					}
 				}
@@ -3153,11 +3452,11 @@
 			{
 				"activators"
 				{
-					"release"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3175,7 +3474,6 @@
 	{
 		"id"		"55"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3205,7 +3503,6 @@
 	{
 		"id"		"59"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3235,7 +3532,6 @@
 	{
 		"id"		"63"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3265,7 +3561,6 @@
 	{
 		"id"		"67"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3295,7 +3590,6 @@
 	{
 		"id"		"71"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3325,7 +3619,6 @@
 	{
 		"id"		"75"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3355,7 +3648,6 @@
 	{
 		"id"		"79"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3385,7 +3677,6 @@
 	{
 		"id"		"83"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3415,7 +3706,6 @@
 	{
 		"id"		"87"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3445,7 +3735,6 @@
 	{
 		"id"		"110"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3475,26 +3764,9 @@
 	{
 		"id"		"134"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
-			"button_menu"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action GameControls jpeg"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
 			"left_bumper"
 			{
 				"activators"
@@ -3559,47 +3831,15 @@
 				{
 				}
 			}
-			"button_back_left_upper"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action SpectatorControls jump"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_back_right_upper"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"game_action SpectatorControls movedown"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
 			"button_capture"
 			{
 				"activators"
 				{
-					"release"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3617,7 +3857,6 @@
 	{
 		"id"		"170"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3631,7 +3870,6 @@
 	{
 		"id"		"176"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3655,11 +3893,11 @@
 			{
 				"activators"
 				{
-					"release"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3677,7 +3915,6 @@
 	{
 		"id"		"180"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3685,11 +3922,11 @@
 			{
 				"activators"
 				{
-					"release"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3707,7 +3944,6 @@
 	{
 		"id"		"186"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3727,7 +3963,7 @@
 				{
 				}
 			}
-			"button_back_right_upper"
+			"button_capture"
 			{
 				"activators"
 				{
@@ -3735,23 +3971,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action DroneControlsLayer use"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_capture"
-			{
-				"activators"
-				{
-					"release"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3769,7 +3989,6 @@
 	{
 		"id"		"191"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3825,11 +4044,11 @@
 			{
 				"activators"
 				{
-					"release"
+					"Full_Press"
 					{
 						"bindings"
 						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3847,7 +4066,6 @@
 	{
 		"id"		"196"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3883,7 +4101,7 @@
 				{
 				}
 			}
-			"button_back_right_upper"
+			"button_capture"
 			{
 				"activators"
 				{
@@ -3891,23 +4109,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action TabletRadarControlsLayer showscores"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_capture"
-			{
-				"activators"
-				{
-					"release"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -3925,7 +4127,6 @@
 	{
 		"id"		"200"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -3977,7 +4178,7 @@
 				{
 				}
 			}
-			"button_back_right_upper"
+			"button_capture"
 			{
 				"activators"
 				{
@@ -3985,23 +4186,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action TabletBuyMenuControlsLayer showscores"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_capture"
-			{
-				"activators"
-				{
-					"release"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -4019,7 +4204,6 @@
 	{
 		"id"		"207"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -4039,7 +4223,7 @@
 				{
 				}
 			}
-			"button_back_right_upper"
+			"button_capture"
 			{
 				"activators"
 				{
@@ -4047,23 +4231,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"game_action ScoreBoardLayer menu_cancel"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_capture"
-			{
-				"activators"
-				{
-					"release"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action system_key_1"
+							"binding"		"controller_action SCREENSHOT"
 						}
 					}
 				}
@@ -4079,9 +4247,8 @@
 	}
 	"group"
 	{
-		"id"		"215"
+		"id"		"230"
 		"mode"		"switches"
-		"name"		""
 		"description"		""
 		"inputs"
 		{
@@ -4101,27 +4268,17 @@
 				{
 				}
 			}
-			"button_capture"
-			{
-				"activators"
-				{
-					"release"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action system_key_1"
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
 		}
 		"settings"
 		{
 			"layer"		"1"
 		}
+	}
+	"group"
+	{
+		"id"		"249"
+		"mode"		"disabled"
+		"description"		""
 	}
 	"preset"
 	{
@@ -4140,17 +4297,17 @@
 			"138"		"right_trackpad inactive"
 			"142"		"right_trackpad inactive"
 			"162"		"right_trackpad active"
+			"218"		"right_trackpad inactive"
+			"238"		"right_trackpad inactive"
 			"10"		"gyro inactive"
 			"33"		"gyro inactive"
 			"213"		"gyro active"
-			"20"		"dpad active"
-			"24"		"right_joystick inactive"
-			"27"		"right_joystick active"
-			"145"		"right_joystick inactive"
 			"139"		"left_trackpad inactive"
 			"140"		"left_trackpad inactive"
 			"141"		"left_trackpad inactive"
-			"175"		"left_trackpad active"
+			"175"		"left_trackpad inactive"
+			"215"		"left_trackpad active"
+			"225"		"left_trackpad inactive"
 		}
 	}
 	"preset"
@@ -4170,15 +4327,13 @@
 			"148"		"joystick active"
 			"6"		"right_trackpad inactive"
 			"30"		"right_trackpad inactive"
-			"220"		"right_trackpad active"
+			"144"		"right_trackpad active modeshift"
+			"219"		"right_trackpad active"
 			"29"		"gyro inactive"
 			"32"		"gyro inactive"
-			"21"		"dpad active"
-			"25"		"right_joystick inactive"
-			"143"		"right_joystick inactive"
-			"144"		"right_joystick active modeshift"
-			"161"		"right_joystick active"
-			"221"		"left_trackpad active"
+			"216"		"left_trackpad inactive"
+			"237"		"left_trackpad inactive"
+			"247"		"left_trackpad active"
 		}
 	}
 	"preset"
@@ -4191,10 +4346,8 @@
 			"46"		"button_diamond active"
 			"47"		"left_trigger active"
 			"48"		"right_trigger active"
-			"49"		"dpad active"
-			"94"		"right_joystick inactive"
-			"96"		"right_joystick inactive"
-			"190"		"left_trackpad active"
+			"190"		"left_trackpad inactive"
+			"217"		"left_trackpad active"
 		}
 	}
 	"preset"
@@ -4225,12 +4378,6 @@
 			"149"		"joystick inactive"
 			"155"		"joystick inactive"
 			"151"		"gyro inactive"
-			"160"		"dpad inactive"
-			"150"		"right_joystick inactive"
-			"153"		"right_joystick inactive"
-			"154"		"right_joystick inactive"
-			"156"		"right_joystick inactive"
-			"219"		"left_trackpad active"
 		}
 	}
 	"preset"
@@ -4257,7 +4404,7 @@
 			"202"		"left_trigger active"
 			"203"		"right_trigger active"
 			"205"		"right_trackpad active"
-			"204"		"right_joystick active"
+			"220"		"right_trackpad inactive"
 		}
 	}
 	"preset"
@@ -4278,10 +4425,10 @@
 		"name"		"DeathmatchLayer"
 		"group_source_bindings"
 		{
-			"215"		"switch active"
-			"216"		"button_diamond active"
-			"217"		"left_trigger active"
-			"218"		"right_trigger active"
+			"230"		"switch active"
+			"231"		"button_diamond active"
+			"232"		"left_trigger active"
+			"233"		"right_trigger active"
 		}
 	}
 	"preset"
@@ -4294,7 +4441,7 @@
 			"208"		"button_diamond active"
 			"209"		"left_trigger active"
 			"210"		"right_trigger active"
-			"211"		"right_joystick active"
+			"221"		"right_trackpad active"
 		}
 	}
 	"preset"
@@ -4321,7 +4468,7 @@
 			"181"		"button_diamond active"
 			"182"		"left_trigger active"
 			"183"		"right_trigger active"
-			"184"		"right_joystick active"
+			"222"		"right_trackpad active"
 		}
 	}
 	"settings"
