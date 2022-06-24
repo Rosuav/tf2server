@@ -4,3 +4,9 @@ $ sed -i 's/ (offset [0-9]*)//' steamcmd_linux/csgo/csgo/netprops.txt
 
 (in CS:GO) sm_dump_datamaps datamaps.txt
 $ sed -i 's/ (Offset [0-9]*)//' steamcmd_linux/csgo/csgo/datamaps.txt
+
+Random crashes? Update sourcemod and/or metamod in the TF2 directory:
+* https://www.metamodsource.net/downloads.php?branch=stable
+* https://www.sourcemod.net/downloads.php?branch=stable
+Extract into ./steamcmd_linux/tf2/tf using "unar -D" to skip making a
+nested directory. Both TF2 and CS:GO will see it.
