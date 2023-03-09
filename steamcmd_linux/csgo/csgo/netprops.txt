@@ -1,4 +1,4 @@
-// Dump of all network properties for "csgo" as at 2021/11/08
+// Dump of all network properties for "csgo" as at 2023/03/09
 //
 
 CAI_BaseNPC (type DT_AI_BaseNPC)
@@ -4635,6 +4635,7 @@ CBasePlayer (type DT_BasePlayer)
    Member: m_bDucking (type integer) (bits 1) (Unsigned)
    Member: m_flLastDuckTime (type float) (bits 0) (NoScale)
    Member: m_bInDuckJump (type integer) (bits 1) (Unsigned)
+   Member: m_nOldButtons (type integer) (bits 32) (Unsigned)
    Member: m_nDuckTimeMsecs (type integer) (bits 10) (Unsigned|ChangesOften)
    Member: m_nDuckJumpTimeMsecs (type integer) (bits 10) (Unsigned)
    Member: m_nJumpTimeMsecs (type integer) (bits 10) (Unsigned)
@@ -10354,6 +10355,7 @@ CCSPlayer (type DT_CSPlayer)
     Member: m_bDucking (type integer) (bits 1) (Unsigned)
     Member: m_flLastDuckTime (type float) (bits 0) (NoScale)
     Member: m_bInDuckJump (type integer) (bits 1) (Unsigned)
+    Member: m_nOldButtons (type integer) (bits 32) (Unsigned)
     Member: m_nDuckTimeMsecs (type integer) (bits 10) (Unsigned|ChangesOften)
     Member: m_nDuckJumpTimeMsecs (type integer) (bits 10) (Unsigned)
     Member: m_nJumpTimeMsecs (type integer) (bits 10) (Unsigned)
