@@ -1,0 +1,15 @@
+whitelist
+{
+	//
+	// Allow custom spray decals.
+	//
+	materials\console\...       any
+	materials\temp\...          any
+	materials\vgui\logos\...    any
+	materials\vgui\logos\ui\... any
+	sound\misc\...              any
+	sound\vo\...                any
+	sound\ui\...                any
+	scripts\vscript\...         any
+}
+
