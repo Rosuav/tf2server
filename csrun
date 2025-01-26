@@ -1,5 +1,11 @@
 #!/bin/bash
 cd ~/tf2server/steamcmd_linux/csgo
+
+cd game/bin/linuxsteamrt64
+./cs2 -dedicated
+
+exit
+# Below is old CS:GO launch system
 export HOME=/tmp # Break $HOME so it can't find ~/.steam/sdk32/steamclient.so and thus won't get confuzzled by the Steam GUI
 export LD_LIBRARY_PATH=bin
 ARGS="./srcds_linux -console -game csgo -usercon -authkey $STEAM_API_KEY +sv_setsteamaccount $STEAM_CSGO_GSLT +sv_tags drzed"

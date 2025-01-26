@@ -2,6 +2,6 @@ cd ~/tf2server/steamcmd_linux
 ./steamcmd.sh <<EOT
 force_install_dir ./csgo
 login anonymous
-app_update 740
+app_update 730
 quit
 EOT

@@ -10,3 +10,6 @@ Random crashes? Update sourcemod and/or metamod in the TF2 directory:
 * https://www.sourcemod.net/downloads.php?branch=stable
 Extract into ./steamcmd_linux/tf2/tf using "unar -D" to skip making a
 nested directory. Both TF2 and CS:GO will see it.
+
+Game refuses to launch, talks about GCC version?
+~/tf2server/steamcmd_linux/csgo/bin$ mv libgcc_s.so.1{,.nope}
