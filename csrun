@@ -2,7 +2,7 @@
 cd ~/tf2server/steamcmd_linux/csgo
 
 cd game/bin/linuxsteamrt64
-./cs2 -dedicated
+./cs2 -dedicated -authkey $STEAM_API_KEY +sv_setsteamaccount $STEAM_CSGO_GSLT +sv_tags drzed -port 27016 +exec server_last
 
 exit
 # Below is old CS:GO launch system

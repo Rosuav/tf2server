@@ -1,0 +1,224 @@
+"SaveFile"
+{
+	"timestamp"		"2025-01-27 10:39:40"
+	"map"		"de_dust2"
+	"round"		"1"
+	"FirstHalfScore"
+	{
+		"team1"		"0"
+		"team2"		"1"
+	}
+	"History"
+	{
+		"NumConsecutiveCTLoses"		"2"
+		"LoserMostRecentTeam"		"CT"
+		"SpawnPointsCfg"		"-1406913377"
+	}
+	"RoundResults"
+	{
+		"round1"		"6"
+		"round2"		"0"
+		"round3"		"0"
+		"round4"		"0"
+		"round5"		"0"
+		"round6"		"0"
+		"round7"		"0"
+		"round8"		"0"
+		"round9"		"0"
+		"round10"		"0"
+		"round11"		"0"
+		"round12"		"0"
+		"round13"		"0"
+		"round14"		"0"
+		"round15"		"0"
+		"round16"		"0"
+		"round17"		"0"
+		"round18"		"0"
+		"round19"		"0"
+		"round20"		"0"
+		"round21"		"0"
+		"round22"		"0"
+		"round23"		"0"
+		"round24"		"0"
+		"round25"		"0"
+		"round26"		"0"
+		"round27"		"0"
+		"round28"		"0"
+		"round29"		"0"
+		"round30"		"0"
+	}
+	"PlayersAliveT"
+	{
+		"round1"		"4"
+		"round2"		"63"
+		"round3"		"63"
+		"round4"		"63"
+		"round5"		"63"
+		"round6"		"63"
+		"round7"		"63"
+		"round8"		"63"
+		"round9"		"63"
+		"round10"		"63"
+		"round11"		"63"
+		"round12"		"63"
+		"round13"		"63"
+		"round14"		"63"
+		"round15"		"63"
+		"round16"		"63"
+		"round17"		"63"
+		"round18"		"63"
+		"round19"		"63"
+		"round20"		"63"
+		"round21"		"63"
+		"round22"		"63"
+		"round23"		"63"
+		"round24"		"63"
+		"round25"		"63"
+		"round26"		"63"
+		"round27"		"63"
+		"round28"		"63"
+		"round29"		"63"
+		"round30"		"63"
+	}
+	"PlayersAliveCT"
+	{
+		"round1"		"1"
+		"round2"		"63"
+		"round3"		"63"
+		"round4"		"63"
+		"round5"		"63"
+		"round6"		"63"
+		"round7"		"63"
+		"round8"		"63"
+		"round9"		"63"
+		"round10"		"63"
+		"round11"		"63"
+		"round12"		"63"
+		"round13"		"63"
+		"round14"		"63"
+		"round15"		"63"
+		"round16"		"63"
+		"round17"		"63"
+		"round18"		"63"
+		"round19"		"63"
+		"round20"		"63"
+		"round21"		"63"
+		"round22"		"63"
+		"round23"		"63"
+		"round24"		"63"
+		"round25"		"63"
+		"round26"		"63"
+		"round27"		"63"
+		"round28"		"63"
+		"round29"		"63"
+		"round30"		"63"
+	}
+	"Timeouts"
+	{
+		"team1"		"1"
+		"team2"		"1"
+		"technical"
+		{
+			"team1"		"0"
+			"team2"		"0"
+		}
+	}
+	"PlayersOnTeam2"
+	{
+		"83465961"
+		{
+			"name"		"Rosuav"
+			"kills"		"4"
+			"assists"		"0"
+			"deaths"		"1"
+			"mvps"		"1"
+			"score"		"11"
+			"cash"		"5800"
+			"roundsWon"		"1"
+			"enemyKs"		"4"
+			"enemyHSs"		"2"
+			"enemy2Ks"		"0"
+			"enemy3Ks"		"0"
+			"enemy4Ks"		"1"
+			"enemy5Ks"		"0"
+			"enemyKAg"		"4"
+			"firstKs"		"1"
+			"clutchKs"		"0"
+			"kills_weapon_pistol"		"4"
+			"kills_weapon_sniper"		"0"
+			"kills_knife"		"0"
+			"kills_taser"		"0"
+			"enemyDamageDealt"		"390"
+			"helmet"		"0"
+			"MatchStats"
+			{
+				"Kills"
+				{
+					"round1"		"4"
+				}
+				"Damage"
+				{
+					"round1"		"390"
+				}
+				"EquipmentValue"
+				{
+					"round1"		"200"
+				}
+				"MoneySaved"
+				{
+					"round1"		"800"
+				}
+				"KillReward"
+				{
+					"round1"		"1200"
+				}
+				"LiveTime"
+				{
+					"round1"		"61"
+				}
+				"Deaths"
+				{
+					"round1"		"1"
+				}
+				"HeadShotKills"
+				{
+					"round1"		"2"
+				}
+				"Objective"
+				{
+					"round1"		"1"
+				}
+				"CashEarned"
+				{
+					"round1"		"5800"
+				}
+				"Totals"
+				{
+					"Kills"		"4"
+					"Damage"		"390"
+					"EquipmentValue"		"200"
+					"KillReward"		"1200"
+					"LiveTime"		"61"
+					"Deaths"		"1"
+					"Assists"		"0"
+					"HeadshotKills"		"2"
+					"Objective"		"1"
+					"CashEarned"		"5000"
+					"UtilityDamage"		"0"
+					"UtilityCount"		"0"
+					"UtilitySuccesses"		"0"
+					"UtilityEnemies"		"0"
+					"FlashCount"		"0"
+					"FlashSuccesses"		"0"
+					"EnemiesFlashed"		"0"
+					"1v1Count"		"0"
+					"1v1Wins"		"0"
+					"1v2Count"		"0"
+					"1v2Wins"		"0"
+					"EntryCount"		"1"
+					"EntryWins"		"1"
+				}
+			}
+		}
+	}
+}
