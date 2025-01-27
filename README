@@ -13,3 +13,5 @@ nested directory. Both TF2 and CS:GO will see it.
 
 Game refuses to launch, talks about GCC version?
 ~/tf2server/steamcmd_linux/csgo/bin$ mv libgcc_s.so.1{,.nope}
+
+TODO: Automate the edit to gameinfo.gi

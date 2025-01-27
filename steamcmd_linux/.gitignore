@@ -31,6 +31,7 @@ csgo/game/bin
 csgo/game/core
 csgo/game/csgo/bin
 csgo/game/csgo/panorama/videos/
+csgo/game/csgo/addons
 
 # Ignore the map files, which are large; but hang onto the Co-op Strike
 # mission from Shattered Web, aka coop_kasbah.
