@@ -5,3 +5,4 @@ login anonymous
 app_update 730
 quit
 EOT
+python3 fix_gameinfo.py
